@@ -51,7 +51,7 @@ const DrawerNav = ({ open, setOpen, pages }) => {
                           <Divider />
                           <List component="div" disablePadding>
                             {event.subEndpoints.map((subEndpoint) => (
-                              <ListItem button key={subEndpoint} sx={{ py: 1, pl: 4 }}>
+                              <ListItem button key={subEndpoint} sx={{ py: 1, pl: 4 }} onClick={handleDrawerClose}>
                                 <ListItemText primary={subEndpoint} />
                               </ListItem>
                             ))}
