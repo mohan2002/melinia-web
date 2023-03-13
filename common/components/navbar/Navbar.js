@@ -13,6 +13,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import DrawerNav from "./DrawerNav";
 import { List, ListItem } from "@mui/material";
 // import Logo from "../../../assets/images/melinialogo.png"
+import { useRouter } from 'next/navigation';
 
 const pages = [
   {
@@ -24,24 +25,44 @@ const pages = [
       {
         endpoint: "Technical",
         subEndpoints: [
-          "Technical Event A",
-          "Technical Event B",
-          "Technical Event C",
+          {
+            name:"UI/UX",
+            endpoint:"/events/technical/ui-ux"
+          },
+          {
+            name:"Datathon",
+            endpoint:"/events/technical/datathon"
+          },
+          {
+            name:"Jumbled Code",
+            endpoint:"/events/technical/jumbledcode"
+          }
         ],
       },
       {
         endpoint: "Non Technical",
         subEndpoints: [
-          "Non Technical Event A",
-          "Non Technical Event B",
-          "Non Technical Event C",
+          {
+            name:"Inspector Gadget",
+            endpoint:"/events/nontechnical/inspector-gadget"
+          },
+          {
+            name:"AR Treasure Hunt",
+            endpoint:"/events/nontechnical/ar-treasure-hunt"
+          },
+          {
+            name:"Deep Magic",
+            endpoint:"/events/nontechnical/deep-magic"
+          }
         ],
       },
       {
         endpoint: "Hackathon",
+        endpointUrl:"/events/hackathon"
       },
       {
         endpoint: "Workshop",
+        endpointUrl:"/events/workshop"
       },
     ],
   },
@@ -56,7 +77,9 @@ const pages = [
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [dropdown, setDropdown] = React.useState(null);
-  const [submenu, setAnchorEl] = React.useState(null);
+  const [submenuTech, setSubmenuTech] = React.useState(null);
+  const [submenuNonTech, setSubmenuNonTech] = React.useState(null);
+  const router = useRouter()
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -74,46 +97,39 @@ function Navbar() {
     setDropdown(null);
   };
 
-  const handleOpenSubmenu = (event) => {
-    setAnchorEl(event.currentTarget);
+  // const handleOpenSubmenu = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+  const handleOpenSubmenu = (event, endpoint) => {
+    event.preventDefault();
+    switch (endpoint) {
+      case "Technical":
+        setSubmenuTech(event.currentTarget);
+        break;
+      case "Non Technical":
+        setSubmenuNonTech(event.currentTarget);
+        break;
+      default:
+        break;
+    }
   };
   const handleCloseSubmenu = () => {
-    setAnchorEl(null);
+    setSubmenuTech(null);
+    setSubmenuNonTech(null);
     setDropdown(null)
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
+    <AppBar position="static" color="transparent" elevation={0} sx={{height:"10%",display:"flex",alignItems:"center",justifyContent:"center"}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box display="flex" justifyContent="space-between" width="100%">
-            <Box display="flex" alignItems="center" width={120} height={50} bgcolor="red" mt={1}>
-                <img src="/images/melenialogo.png" alt="Image" style={{
+            <Box display="flex" alignItems="center" width={120} height={50} mt={1}>
+                <img src="/images/melenialogo.png"  style={{
                   width:"100%"
                 }}/>
             </Box>
 
-            <Box display="flex" alignItems="center">
-              <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-              <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href=""
-                sx={{
-                  mr: 2,
-                  display: { xs: "flex", md: "none" },
-                  flexGrow: 1,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
-              >
-                LOGO
-              </Typography>
-            </Box>
 
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -122,9 +138,9 @@ function Navbar() {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="white"
               >
-                <MenuIcon />
+                <MenuIcon style={{color:"white",fontSize:"36px"}}/>
               </IconButton>
               <DrawerNav
                 open={anchorElNav}
@@ -137,7 +153,7 @@ function Navbar() {
               <Box>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", display: "block", mr: 4 }}
+                  sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
                   Home
                 </Button>
@@ -145,32 +161,10 @@ function Navbar() {
               <Box onMouseLeave={handleCloseDropdown}>
                 <Button
                   onMouseEnter={handleOpenDropdown}
-                  sx={{ my: 2, color: "black", display: "block", mr: 4 }}
+                  sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
                   Events
                 </Button>
-                {/* <Menu
-                  id="menu-appbar"
-                  anchorEl={dropdown}
-                  keepMounted
-                  open={Boolean(dropdown)}
-                  onClose={handleCloseDropdown}
-                  sx={{
-                    display: { xs: "none", md: "block" },
-                    marginTop: 1,
-                  }}
-                  onMouseLeave={handleCloseDropdown}
-                >
-                  {pages[1].dropdown.map((drop) => (
-                    <MenuItem
-                    key={drop}
-                    onClick={handleCloseDropdown}
-                    sx={{ paddingX: 3, paddingY: 1,display:'flex',flexDirection:'column',alignItems:"flex-start",pr:5}}
-                  >
-                    <Typography textAlign="center">{drop.endpoint}</Typography>
-                  </MenuItem>
-                  ))}
-                </Menu> */}
                 <Menu
                   id="menu-appbar"
                   anchorEl={dropdown}
@@ -196,7 +190,10 @@ function Navbar() {
                         onClick={
                           drop.subEndpoints
                             ? (event) => handleOpenSubmenu(event, drop.endpoint)
-                            : handleCloseDropdown
+                            : () => {
+                                handleCloseDropdown();
+                                drop.endpointUrl && router.push(drop.endpointUrl);
+                              }
                         }
                         sx={{
                           paddingX: 3,
@@ -213,8 +210,8 @@ function Navbar() {
                       </MenuItem>
                       {drop.subEndpoints && (
                         <Menu
-                          anchorEl={submenu}
-                          open={Boolean(submenu)}
+                          anchorEl={drop.endpoint == "Technical" ? submenuTech : submenuNonTech}
+                          open={Boolean(drop.endpoint == "Technical" ? submenuTech : submenuNonTech)}
                           onClose={handleCloseSubmenu}
                           anchorOrigin={{
                             vertical: "top",
@@ -234,11 +231,14 @@ function Navbar() {
                         >
                           {drop.subEndpoints.map((subEndpoint) => (
                             <MenuItem
-                              key={subEndpoint}
+                              key={subEndpoint.name}
                               sx={{ paddingX: 3 }}
-                              onClick={handleCloseSubmenu}
+                              onClick={() => {
+                                router.push(subEndpoint.endpoint)
+                                handleCloseSubmenu;
+                              }}
                             >
-                              <Typography>{subEndpoint}</Typography>
+                              <Typography>{subEndpoint.name}</Typography>
                             </MenuItem>
                           ))}
                         </Menu>
@@ -250,8 +250,11 @@ function Navbar() {
 
               <Box>
                 <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", display: "block", mr: 4 }}
+                  onClick={() => {
+                    router.push("/committee")
+                    handleCloseNavMenu;
+                  }}
+                  sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
                   Committee
                 </Button>
@@ -259,7 +262,7 @@ function Navbar() {
               <Box>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", display: "block", mr: 4 }}
+                  sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
                   College Tour
                 </Button>
@@ -273,3 +276,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
