@@ -68,6 +68,7 @@ const pages = [
   },
   {
     endpoint: "Committe",
+    endpointUrl:"/committee"
   },
   {
     endpoint: "College Tour",
@@ -276,5 +277,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

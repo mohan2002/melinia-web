@@ -9,9 +9,11 @@ import {
   Box,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useRouter } from 'next/router';
 
 const DrawerNav = ({ open, setOpen, pages }) => {
   const [showEvents, setShowEvents] = useState(false);
+  const router = useRouter();
 
   const handleDrawerClose = () => {
     setOpen(false);
@@ -25,34 +27,55 @@ const DrawerNav = ({ open, setOpen, pages }) => {
     <Drawer anchor="right" open={open} onClose={handleDrawerClose}>
       <Box pt={2}>
         <List sx={{ width: 300, px: 2 }}>
-          {pages.map((text) => (
-            <div key={text.endpoint}>
+          {pages.map((page) => (
+            <div key={page.endpoint}>
               <ListItem
                 button
-                onClick={text.endpoint === 'Events' ? handleEventsToggle : handleDrawerClose}
+                onClick={() => {
+                  if (page.endpoint === 'Events') {
+                    handleEventsToggle();
+                  } else if (page.endpointUrl) {
+                    router.push(page.endpointUrl);
+                    handleDrawerClose();
+                  } else {
+                    handleDrawerClose();
+                  }
+                }}
                 sx={{ py: 2 }}
               >
-                <ListItemText primary={<Typography variant="body1">{text.endpoint}</Typography>} />
-                {text.endpoint === 'Events' && <ExpandMoreIcon sx={{ mr: 1 }} />}
+                <ListItemText primary={<Typography variant="body1">{page.endpoint}</Typography>} />
+                {page.endpoint === 'Events' && <ExpandMoreIcon sx={{ mr: 1 }} />}
               </ListItem>
-              {text.endpoint === 'Events' && showEvents && (
+              {page.endpoint === 'Events' && showEvents && (
                 <>
                   <Divider />
                   <Box p={2}>
-                    {text.dropdown.map((event) =>
-                      event.subEndpoints ? (
-                        <div key={event.endpoint}>
-                          <ListItem button sx={{ py: 1, pl: 2 }} onClick={handleDrawerClose}>
+                    {page.dropdown.map((dropdownPage) =>
+                      dropdownPage.subEndpoints ? (
+                        <div key={dropdownPage.endpoint}>
+                          <ListItem
+                            button
+                            sx={{ py: 1, pl: 2 }}
+                            onClick={() => handleDrawerClose()}
+                          >
                             <ListItemText
-                              primary={<Typography variant="body1">{event.endpoint}</Typography>}
+                              primary={<Typography variant="body1">{dropdownPage.endpoint}</Typography>}
                             />
-                            {/* <ExpandMoreIcon /> */}
+                            <ExpandMoreIcon />
                           </ListItem>
                           <Divider />
                           <List component="div" disablePadding>
-                            {event.subEndpoints.map((subEndpoint) => (
-                              <ListItem button key={subEndpoint} sx={{ py: 1, pl: 4 }} onClick={handleDrawerClose}>
-                                <ListItemText primary={subEndpoint} />
+                            {dropdownPage.subEndpoints.map((subEndpoint) => (
+                              <ListItem
+                                button
+                                key={subEndpoint.name}
+                                sx={{ py: 1, pl: 4 }}
+                                onClick={() => {
+                                  handleDrawerClose();
+                                  router.push(subEndpoint.endpoint);
+                                }}
+                              >
+                                <ListItemText primary={subEndpoint.name} />
                               </ListItem>
                             ))}
                           </List>
@@ -60,16 +83,18 @@ const DrawerNav = ({ open, setOpen, pages }) => {
                         </div>
                       ) : (
                         <ListItem
-                          key={event.endpoint}
+                          key={dropdownPage.endpoint}
                           button
                           sx={{ py: 1, pl: 2 }}
-                          onClick={handleDrawerClose}
+                          onClick={() => {
+                            handleDrawerClose();
+                            router.push(dropdownPage.endpointUrl);
+                          }}
                         >
                           <ListItemText
-                            primary={<Typography variant="body1">{event.endpoint}</Typography>}
+                            primary={<Typography variant="body1">{dropdownPage.endpoint}</Typography>}
                           />
                           <Divider />
-                          
                         </ListItem>
                       )
                     )}
