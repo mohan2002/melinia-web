@@ -58,8 +58,9 @@ function EventsGrid() {
           </Box>
         </Box>
 
-        <Grid container spacing={4} mt={4}>
-          <Grid item xs={12} md={4} data-aos="fade-right" data-aos-delay="100">
+        <Box display="flex" alignItems="center" justifyContent="center" width="100%">
+        <Grid container spacing={4} mt={4} width="100%">
+          <Grid item xs={12} md={4}  >
             <EventCard />
           </Grid>
           <Grid item xs={12} md={4} data-aos="fade-right" data-aos-delay="120">
@@ -78,6 +79,8 @@ function EventsGrid() {
             <EventCard />
           </Grid>
         </Grid>
+
+        </Box>
 
     
         <Box mt={2} display="flex" alignItems="center" justifyContent="center" sx={{display:{xs:"flex",md:"none"}}}>
