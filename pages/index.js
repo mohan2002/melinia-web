@@ -13,6 +13,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import dynamic from 'next/dynamic';
 import AOS from 'aos'
 import EventsGrid from "@/common/components/EventsGrid";
+import QueryCard from "@/common/components/QueryCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,7 @@ export default function Home() {
       </Box>
       <AboutMelinia/>
       <EventsGrid/>
+      <QueryCard/>
     </div>
   );
 }
