@@ -14,6 +14,8 @@ import dynamic from 'next/dynamic';
 import AOS from 'aos'
 import EventsGrid from "@/common/components/EventsGrid";
 import QueryCard from "@/common/components/QueryCard";
+import Sponsors from "@/common/components/Sponsors";
+import MeliniaTimeline from "@/common/components/MeliniaTimeline";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,6 +55,8 @@ export default function Home() {
       <AboutMelinia/>
       <EventsGrid/>
       <QueryCard/>
+      <Sponsors/>
+      <MeliniaTimeline/>
     </div>
   );
 }
