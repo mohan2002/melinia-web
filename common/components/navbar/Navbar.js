@@ -127,7 +127,8 @@ function Navbar() {
           <Box display="flex" justifyContent="space-between" width="100%">
             <Box display="flex" alignItems="center" width={120} height={50} mt={1}>
                 <img src="/images/melenialogo.png"  style={{
-                  width:"100%"
+                  width:"100%",
+                  marginLeft:"10px"
                 }}/>
             </Box>
 
