@@ -1,4 +1,4 @@
-import AboutMelinia from "@/common/AboutMelinia";
+import AboutMelinia from "@/common/components/AboutMelinia";
 import Cover from "@/common/components/Banner";
 import Banner from "@/common/components/Banner";
 import Navbar from "@/common/components/navbar/Navbar";
@@ -12,6 +12,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 import dynamic from 'next/dynamic';
 import AOS from 'aos'
+import EventsGrid from "@/common/components/EventsGrid";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function Home() {
         <Banner/>
       </Box>
       <AboutMelinia/>
+      <EventsGrid/>
     </div>
   );
 }
