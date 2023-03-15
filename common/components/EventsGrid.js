@@ -23,7 +23,7 @@ function EventsGrid() {
           sx={{flexDirection:{xs:"column",md:"row"}}}
         >
           <Typography component="h2" variant="h4" fontWeight="600">
-            Events
+            EVENTS
           </Typography>
           <Box display="flex" flexDirection="row" gap={2} mt={2}>
             <Button
