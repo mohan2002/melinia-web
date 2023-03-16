@@ -1,5 +1,8 @@
+import BottomFooter from '@/common/components/BottomFooter'
 import EventBanner from '@/common/components/EventBanner'
 import EventDetailsCard from '@/common/components/EventDetailsCard'
+import EventRewards from '@/common/components/EventRewards'
+import EventRule from '@/common/components/EventRule'
 import Navbar from '@/common/components/navbar/Navbar'
 import { Box } from '@mui/material'
 import { useRouter } from 'next/router'
@@ -15,6 +18,9 @@ function Event() {
         <EventBanner/>
       </Box>
       <EventDetailsCard/>
+      <EventRule/>
+      <EventRewards/>
+      <BottomFooter/>
     </Box>
   )
 }
