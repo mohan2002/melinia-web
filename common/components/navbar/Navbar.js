@@ -80,6 +80,8 @@ function Navbar() {
   const [dropdown, setDropdown] = React.useState(null);
   const [submenuTech, setSubmenuTech] = React.useState(null);
   const [submenuNonTech, setSubmenuNonTech] = React.useState(null);
+  const [isSticky, setIsSticky] = React.useState(false);
+
   const router = useRouter()
 
   const handleOpenNavMenu = (event) => {
@@ -97,6 +99,22 @@ function Navbar() {
   const handleCloseDropdown = () => {
     setDropdown(null);
   };
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const bannerHeight = 300; // adjust this value to match the height of your banner
+      const isScrolled = window.scrollY > bannerHeight;
+      setIsSticky(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
 
   // const handleOpenSubmenu = (event) => {
   //   setAnchorEl(event.currentTarget);
@@ -121,7 +139,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0} sx={{height:"10%",display:"flex",alignItems:"center",justifyContent:"center"}} >
+    <AppBar position={isSticky ? "fixed" : "static"} color="transparent" elevation={0} sx={{height:isSticky ? "8%" : "10%",display:"flex",alignItems:"center",justifyContent:"center", bgcolor:isSticky&&"#ED213A"}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box display="flex" justifyContent="space-between" width="100%">
