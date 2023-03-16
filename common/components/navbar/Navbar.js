@@ -75,7 +75,7 @@ const pages = [
   },
 ];
 
-function Navbar() {
+function Navbar({bgcolor}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [dropdown, setDropdown] = React.useState(null);
   const [submenuTech, setSubmenuTech] = React.useState(null);
@@ -139,7 +139,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position={isSticky ? "fixed" : "static"} color="transparent" elevation={0} sx={{height:isSticky ? "8%" : "10%",display:"flex",alignItems:"center",justifyContent:"center", bgcolor:isSticky&&"#ED213A"}} >
+    <AppBar position={isSticky ? "fixed" : "static"} color="transparent" elevation={0} sx={{height:isSticky ? "8%" : "10%",display:"flex",alignItems:"center",justifyContent:"center", bgcolor: bgcolor || isSticky&&"#ED213A"}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box display="flex" justifyContent="space-between" width="100%">
