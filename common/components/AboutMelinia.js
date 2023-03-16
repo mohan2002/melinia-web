@@ -44,7 +44,7 @@ const AboutMelinia = ({ title, description, imageUrl }) => {
                 letterSpacing={0.6}
                 lineHeight={1.8}
               >
-                The Computing Department's prestigious national level
+                The Computing Departments prestigious national level
                 inter-college technical symposium, Melinia, is launching its 3rd
                 edition. It is a celebration of technology, creativity and
                 innovation, attracting students from around the state. It
