@@ -5,10 +5,12 @@ import React from 'react'
 function EventRewards() {
   return (
     <Box sx={{marginTop:"60px"}}>
-        <Container sx={{display:"flex",flexDirection:"row",justifyContent:"space-around"}}>
-            <Card sx={{width:"220px",height:"250px",borderRadius:"10px"}}>
+        <Container sx={{display:"flex",flexDirection:"row",justifyContent:"space-around",flexWrap:"wrap",gap:{xs:"20px",md:"0px"}}}>
+            <Card sx={{width:{xs:"120px",md:"220px"},height:{xs:"190px",md:"250px"},borderRadius:"10px"}}>
                 <Box height="60%" display="flex" flexDirection="column" alignItems="center" justifyContent="center" gap={1}>
-                    <img src="/images/frstprize.png" style={{height:"100px"}}/>
+                    <Box height={{xs:"60px",md:"100px"}}>
+                        <img src="/images/frstprize.png" style={{height:"100%"}}/>
+                    </Box>
                     <Typography>First Prize</Typography>
                 </Box>
                 <Box height="40%" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
@@ -18,9 +20,11 @@ function EventRewards() {
                 </Box>
             </Card>
 
-            <Card sx={{width:"220px",height:"250px",borderRadius:"10px"}}>
+            <Card sx={{width:{xs:"120px",md:"220px"},height:{xs:"190px",md:"250px"},borderRadius:"10px"}}>
                 <Box height="60%" display="flex" flexDirection="column" alignItems="center" justifyContent="center" gap={1}>
-                    <img src="/images/secondprize.png" style={{height:"100px"}}/>
+                <Box height={{xs:"60px",md:"100px"}}>
+                    <img src="/images/secondprize.png" style={{height:"100%"}}/>
+                </Box>
                     <Typography>Second Prize</Typography>
                 </Box>
                 <Box height="40%" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
@@ -30,9 +34,11 @@ function EventRewards() {
                 </Box>
             </Card>
 
-            <Card sx={{width:"220px",height:"250px",borderRadius:"10px"}}>
+            <Card sx={{width:{xs:"120px",md:"220px"},height:{xs:"190px",md:"250px"},borderRadius:"10px"}}>
                 <Box height="60%" display="flex" flexDirection="column" alignItems="center" justifyContent="center" gap={1}>
-                    <img src="/images/thirdprize.png" style={{height:"100px"}}/>
+                <Box height={{xs:"60px",md:"100px"}}>
+                    <img src="/images/thirdprize.png" style={{height:"100%"}}/>
+                    </Box>
                     <Typography>Third Prize</Typography>
                 </Box>
                 <Box height="40%" display="flex" flexDirection="column" alignItems="center" justifyContent="center">

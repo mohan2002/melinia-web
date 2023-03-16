@@ -15,7 +15,7 @@ function EventDetailsCard() {
       <Container>
         <Card
           sx={{
-            height: "300px",
+            height: {xs:"auto",md:"300px"},
             width: "100%",
             display: "flex",
             flexDirection: "column",
@@ -31,114 +31,125 @@ function EventDetailsCard() {
               height: "100%",
               width: "100%",
               display: "flex",
-              flexDirection: "row",
+              flexDirection: {xs:"column",md:"row"},
               alignItems: "center",
               height:"85%"
             }}
           >
-            <Box width="30%">
+            <Box width="30%" sx={{height:{xs:"150px",md:"240px"},width:{xs:"400px"}}}>
               <img
                 src="/images/sample2.png"
-                style={{ height: "240px", width: "100%", objectFit: "contain" }}
+                style={{ height: "100%", width: "100%", objectFit: "contain" }}
               />
             </Box>
 
-            <Grid container spacing={4} sx={{ marginLeft: "20px" }}>
+            <Grid container spacing={{xs:2,md:4}} p={{xs:2,md:0}} sx={{ marginLeft: "30px" }}>
               <Grid
                 item
                 md={6}
-                xs={4}
+                xs={12}
                 display="flex"
                 alignItems="center"
                 flexDirection="row"
-                gap={2}
+                sx={{
+                  gap:{xs:"6px",md:"10px"}
+                }}
               >
                 <LocationOnIcon
-                  fontSize="large"
                   color="#6E798C"
-                  sx={{ color: "#6A6A6A" }}
+                  sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C">COMPUTING BLOCK, CM101</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>COMPUTING BLOCK, CM101</Typography>
               </Grid>
               <Grid
                 item
                 md={6}
-                xs={4}
+                xs={12}
                 display="flex"
                 alignItems="center"
                 flexDirection="row"
-                gap={2}
+                sx={{
+                  gap:{xs:"6px",md:"10px"}
+                }}
               >
                 <AccessAlarmsIcon
-                  fontSize="large"
+                  fontSize="medium"
                   color="#6E798C"
-                  sx={{ color: "#6A6A6A" }}
+                  sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C">5TH APRIL, 2023</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>5TH APRIL, 2023</Typography>
               </Grid>
               <Grid
                 item
                 md={6}
-                xs={4}
+                xs={12}
                 display="flex"
                 alignItems="center"
                 flexDirection="row"
-                gap={2}
+                sx={{
+                  gap:{xs:"6px",md:"10px"}
+                }}
               >
                 <CalendarMonthIcon
-                  fontSize="large"
+                  fontSize="medium"
                   color="#6E798C"
-                  sx={{ color: "#6A6A6A" }}
+                  sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C">12.30 PM</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>12.30 PM</Typography>
               </Grid>
               <Grid
                 item
                 md={6}
-                xs={4}
+                xs={12}
                 display="flex"
                 alignItems="center"
                 flexDirection="row"
-                gap={2}
+                sx={{
+                  gap:{xs:"6px",md:"10px"}
+                }}
               >
                 <PhoneCallbackIcon
-                  fontSize="large"
+                  fontSize="medium"
                   color="#6E798C"
-                  sx={{ color: "#6A6A6A" }}
+                  sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C">+91 9842258390</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>+91 9842258390</Typography>
               </Grid>
               <Grid
                 item
                 md={6}
-                xs={4}
+                xs={12}
                 display="flex"
                 alignItems="center"
                 flexDirection="row"
-                gap={2}
+                sx={{
+                  gap:{xs:"6px",md:"10px"}
+                }}
               >
                 <SellIcon
-                  fontSize="large"
                   color="#6E798C"
-                  sx={{ color: "#6A6A6A" }}
+                  fontSize="medium"
+                  sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C">RS 500</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>RS 500</Typography>
               </Grid>
               <Grid
                 item
                 md={6}
-                xs={4}
+                xs={12}
                 display="flex"
                 alignItems="center"
                 flexDirection="row"
-                gap={2}
+                sx={{
+                  gap:{xs:"6px",md:"10px"}
+                }}
               >
                 <EventBusyIcon
-                  fontSize="large"
                   color="#6E798C"
-                  sx={{ color: "#6A6A6A" }}
+                  fontSize="medium"
+                  sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C">Deadline: 2ND APRIL</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>Deadline: 2ND APRIL</Typography>
               </Grid>
             </Grid>
           </Box>
