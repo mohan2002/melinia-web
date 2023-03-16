@@ -18,6 +18,8 @@ import Sponsors from "@/common/components/Sponsors";
 import MeliniaTimeline from "@/common/components/MeliniaTimeline";
 import HackathonCard from "@/common/components/HackathonCard";
 import WorkshopCard from "@/common/components/WorkshopCard";
+import Script from "next/script";
+import ConnectUs from "@/common/components/ConnectUs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +45,8 @@ export default function Home() {
     );
   }
   return (
+    <>
+    <Script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"/>
     <div>
       <Box
         height="100vh"
@@ -61,6 +65,8 @@ export default function Home() {
       <QueryCard/>
       <Sponsors/>
       <MeliniaTimeline/>
+      <ConnectUs/>
     </div>
+    </>
   );
 }
