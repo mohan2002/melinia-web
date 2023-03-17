@@ -73,6 +73,7 @@ const pages = [
   },
   {
     endpoint: "College Tour",
+    endpointUrl:"/collegetour"
   },
 ];
 
@@ -311,12 +312,15 @@ function Navbar({ bgcolor }) {
                 </Button>
               </Box>
               <Box>
-                <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block", mr: 4 }}
-                >
-                  College Tour
-                </Button>
+              <Button
+                onClick={() => {
+                  window.open('https://citvirtualtour.onrender.com/index', '_blank');
+                  handleCloseNavMenu();
+                }}
+                sx={{ my: 2, color: 'white', display: 'block', mr: 4 }}
+              >
+                College Tour
+              </Button>
               </Box>
             </Box>
           </Box>
