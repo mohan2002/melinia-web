@@ -18,6 +18,7 @@ import { useRouter, redirect } from 'next/navigation';
 const pages = [
   {
     endpoint: "Home",
+    endpointUrl:"/"
   },
   {
     endpoint: "Events",
@@ -76,11 +77,13 @@ const pages = [
   },
 ];
 
-function Navbar() {
+function Navbar({bgcolor}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [dropdown, setDropdown] = React.useState(null);
   const [submenuTech, setSubmenuTech] = React.useState(null);
   const [submenuNonTech, setSubmenuNonTech] = React.useState(null);
+  const [isSticky, setIsSticky] = React.useState(false);
+
   const router = useRouter()
 
   const handleOpenNavMenu = (event) => {
@@ -98,6 +101,22 @@ function Navbar() {
   const handleCloseDropdown = () => {
     setDropdown(null);
   };
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const bannerHeight = 300; // adjust this value to match the height of your banner
+      const isScrolled = window.scrollY > bannerHeight;
+      setIsSticky(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
 
   // const handleOpenSubmenu = (event) => {
   //   setAnchorEl(event.currentTarget);
@@ -122,15 +141,18 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0} sx={{height:"10%",display:"flex",alignItems:"center",justifyContent:"center"}} >
+    <AppBar position={isSticky ? "fixed" : "static"} color="transparent" elevation={0} sx={{height:isSticky ? "8%" : "10%",display:"flex",alignItems:"center",justifyContent:"center", bgcolor: bgcolor || isSticky&&"#ED213A"}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box display="flex" justifyContent="space-between" width="100%">
             <Box display="flex" alignItems="center" width={120} height={50} mt={1}>
-                <img src="/images/melenialogo.png"  style={{
-                  width:"100%",
-                  marginLeft:"10px"
-                }}/>
+                  <img src="/images/melenialogo.png"  style={{
+                    width:"100%",
+                    marginLeft:"10px",
+                    cursor:"pointer"
+                  }}
+                  onClick={() => {router.push('/')}}
+                  />
             </Box>
 
 

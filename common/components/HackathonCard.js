@@ -67,7 +67,7 @@ const HackathonCard = ({ title, description, imageUrl }) => {
                   Here we come up with a hack to ascertain the intellect of individuals. 
                   We work with new media and interactive technologies, things like AI/ML, Get ready to witness machine intelligence and Internet of Things in working out real time concerns with a feasible approach.
                 </Typography>
-                      <Box display="flex" flexDirection="row" justifyContent='flex-start' width="100%" sx={{ mt: { xs: 3, md: 6}}} >
+                      <Box display="flex" flexDirection="row" justifyContent='flex-start' width="100%" sx={{ mt: { xs: 3, md: 6},mb:{xs:4,md:0}}} >
                           <Button sx={{width:"150px",background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>APPLY NOW<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
                       </Box>
               </CardContent>

@@ -6,8 +6,11 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import AlarmOnIcon from '@mui/icons-material/AlarmOn';
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 import HotelIcon from "@mui/icons-material/Hotel";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import Typography from "@mui/material/Typography";
@@ -15,7 +18,7 @@ import { Box } from "@mui/system";
 
 export default function MeliniaTimeline() {
   return (
-    <Box maxWidth="md" mx="auto" sx={{marginTop:"80px"}}>
+    <Box maxWidth="md" mx="auto" sx={{marginTop:"80px"}} data-aos="fade-right" data-aos-delay="120">
       <Typography variant="h4" fontWeight="700" textAlign="center" mb={4}>MELINIA DAY</Typography>
       <Timeline position="alternate" sx={{ width: "100%" }}>
         <TimelineItem>
@@ -25,12 +28,12 @@ export default function MeliniaTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            9:30 am
+            9.00
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
             <TimelineDot>
-              <FastfoodIcon />
+              <AlarmOnIcon />
             </TimelineDot>
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
@@ -47,20 +50,20 @@ export default function MeliniaTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            10:00 am
+            10:00 am - 10.30 am
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
             <TimelineDot color="primary" >
-              <LaptopMacIcon />
+              <LightModeIcon />
             </TimelineDot>
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Datathon
+              Workshop / Game of codes / Triathlon
             </Typography>
-            <Typography>A Technical event related to Data science</Typography>
+            <Typography>A technical and non technical event starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -69,20 +72,20 @@ export default function MeliniaTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            10:00 am
+            11:30 am - 12.00 am
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
             <TimelineDot color="primary" >
-              <LaptopMacIcon />
+              <LightModeIcon />
             </TimelineDot>
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              UI/UX
+              Innovation Odyssey / Coolest melinial / Tell-A-Tale
             </Typography>
-            <Typography>A Technical event related to designing</Typography>
+            <Typography>A technical and non technical event starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -91,20 +94,20 @@ export default function MeliniaTimeline() {
                 variant="body2"
                 color="text.secondary"
             >
-                12:00 am
+                01.00 pm - 01.30 pm
             </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
             <TimelineDot color="primary" variant="outlined">
-              <HotelIcon />
+              <DinnerDiningIcon />
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Jumbled Code
+              Lunch Break
             </Typography>
-            <Typography>A Non Technical Event related to Lorem</Typography>
+            <Typography>Students can take up their Lunch.</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -113,7 +116,7 @@ export default function MeliniaTimeline() {
                 variant="body2"
                 color="text.secondary"
             >
-                12:15 pm
+                01.30 pm - 02.30 pm
             </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"40px"}}/>
@@ -124,7 +127,29 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Inspector Gadget
+              UI/UX / Wizarding Code Hunt
+            </Typography>
+            <Typography>A Non Technical Event that is fun and yet more interesting</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+            <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                variant="body2"
+                color="text.secondary"
+            >
+                02.00 pm - 02.30 pm
+            </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{height:"40px"}}/>
+            <TimelineDot color="primary" variant="outlined">
+              <HotelIcon />
+            </TimelineDot>
+            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              The 221b Puzzle Hunt / Tell-A-Tale (Round 2) / Coolest melinial (Round 2)
             </Typography>
             <Typography>A Non Technical Event that is fun and yet more interesting</Typography>
           </TimelineContent>
