@@ -16,6 +16,8 @@ import EventsGrid from "@/common/components/EventsGrid";
 import QueryCard from "@/common/components/QueryCard";
 import Sponsors from "@/common/components/Sponsors";
 import MeliniaTimeline from "@/common/components/MeliniaTimeline";
+import HackathonCard from "@/common/components/HackathonCard";
+import WorkshopCard from "@/common/components/WorkshopCard";
 import Script from "next/script";
 import ConnectUs from "@/common/components/ConnectUs";
 import BottomFooter from "@/common/components/BottomFooter";
@@ -60,6 +62,8 @@ export default function Home() {
       </Box>
       <AboutMelinia/>
       <EventsGrid/>
+      <WorkshopCard />
+      <HackathonCard />
       <QueryCard/>
       <Sponsors/>
       <MeliniaTimeline/>
