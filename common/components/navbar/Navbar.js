@@ -13,12 +13,12 @@ import AdbIcon from "@mui/icons-material/Adb";
 import DrawerNav from "./DrawerNav";
 import { List, ListItem } from "@mui/material";
 // import Logo from "../../../assets/images/melinialogo.png"
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 const pages = [
   {
     endpoint: "Home",
-    endpointUrl:"/"
+    endpointUrl: "/",
   },
   {
     endpoint: "Events",
@@ -27,63 +27,63 @@ const pages = [
         endpoint: "Technical",
         subEndpoints: [
           {
-            name:"UI/UX",
-            endpoint:"/events/technical/ui-ux"
+            name: "UI/UX",
+            endpoint: "/events/technical/ui-ux",
           },
           {
-            name:"Datathon",
-            endpoint:"/events/technical/datathon"
+            name: "Datathon",
+            endpoint: "/events/technical/datathon",
           },
           {
-            name:"Jumbled Code",
-            endpoint:"/events/technical/jumbledcode"
-          }
+            name: "Jumbled Code",
+            endpoint: "/events/technical/jumbledcode",
+          },
         ],
       },
       {
         endpoint: "Non Technical",
         subEndpoints: [
           {
-            name:"Inspector Gadget",
-            endpoint:"/events/nontechnical/inspector-gadget"
+            name: "Inspector Gadget",
+            endpoint: "/events/nontechnical/inspector-gadget",
           },
           {
-            name:"AR Treasure Hunt",
-            endpoint:"/events/nontechnical/ar-treasure-hunt"
+            name: "AR Treasure Hunt",
+            endpoint: "/events/nontechnical/ar-treasure-hunt",
           },
           {
-            name:"Deep Magic",
-            endpoint:"/events/nontechnical/deep-magic"
-          }
+            name: "Deep Magic",
+            endpoint: "/events/nontechnical/deep-magic",
+          },
         ],
       },
       {
         endpoint: "Hackathon",
-        endpointUrl:"/events/hackathon"
+        endpointUrl: "/events/hackathon",
       },
       {
         endpoint: "Workshop",
-        endpointUrl:"/events/workshop"
+        endpointUrl: "/events/workshop",
       },
     ],
   },
   {
     endpoint: "Committe",
-    endpointUrl:"/committee"
+    endpointUrl: "/committee",
   },
   {
     endpoint: "College Tour",
   },
 ];
 
-function Navbar({bgcolor}) {
+function Navbar({ bgcolor }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [dropdown, setDropdown] = React.useState(null);
   const [submenuTech, setSubmenuTech] = React.useState(null);
   const [submenuNonTech, setSubmenuNonTech] = React.useState(null);
   const [isSticky, setIsSticky] = React.useState(false);
 
-  const router = useRouter()
+  const router = useRouter();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -115,8 +115,6 @@ function Navbar({bgcolor}) {
     };
   }, []);
 
-
-
   // const handleOpenSubmenu = (event) => {
   //   setAnchorEl(event.currentTarget);
   // };
@@ -136,24 +134,44 @@ function Navbar({bgcolor}) {
   const handleCloseSubmenu = () => {
     setSubmenuTech(null);
     setSubmenuNonTech(null);
-    setDropdown(null)
+    setDropdown(null);
   };
 
   return (
-    <AppBar position={isSticky ? "fixed" : "static"} color="transparent" elevation={0} sx={{height:isSticky ? "8%" : "10%",display:"flex",alignItems:"center",justifyContent:"center", bgcolor: bgcolor || isSticky&&"#ED213A"}} >
+    <AppBar
+      position={isSticky ? "fixed" : "static"}
+      color="transparent"
+      elevation={0}
+      sx={{
+        height: isSticky ? "8%" : "10%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        bgcolor: bgcolor || (isSticky && "#ED213A"),
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box display="flex" justifyContent="space-between" width="100%">
-            <Box display="flex" alignItems="center" width={120} height={50} mt={1}>
-                  <img src="/images/melenialogo.png"  style={{
-                    width:"100%",
-                    marginLeft:"10px",
-                    cursor:"pointer"
-                  }}
-                  onClick={() => {router.push('/')}}
-                  />
+            <Box
+              display="flex"
+              alignItems="center"
+              width={120}
+              height={50}
+              mt={1}
+            >
+              <img
+                src="/images/melenialogo.png"
+                style={{
+                  width: "100%",
+                  marginLeft: "10px",
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  router.push("/");
+                }}
+              />
             </Box>
-
 
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -164,7 +182,7 @@ function Navbar({bgcolor}) {
                 onClick={handleOpenNavMenu}
                 color="white"
               >
-                <MenuIcon style={{color:"white",fontSize:"36px"}}/>
+                <MenuIcon style={{ color: "white", fontSize: "36px" }} />
               </IconButton>
               <DrawerNav
                 open={anchorElNav}
@@ -203,8 +221,8 @@ function Navbar({bgcolor}) {
                   elevation="none"
                   PaperProps={{
                     style: {
-                      border:"1px solid #eee",
-                      marginLeft:"2px"
+                      border: "1px solid #eee",
+                      marginLeft: "2px",
                     },
                   }}
                 >
@@ -216,7 +234,8 @@ function Navbar({bgcolor}) {
                             ? (event) => handleOpenSubmenu(event, drop.endpoint)
                             : () => {
                                 handleCloseDropdown();
-                                drop.endpointUrl && router.push(drop.endpointUrl);
+                                drop.endpointUrl &&
+                                  router.push(drop.endpointUrl);
                               }
                         }
                         sx={{
@@ -234,8 +253,16 @@ function Navbar({bgcolor}) {
                       </MenuItem>
                       {drop.subEndpoints && (
                         <Menu
-                          anchorEl={drop.endpoint == "Technical" ? submenuTech : submenuNonTech}
-                          open={Boolean(drop.endpoint == "Technical" ? submenuTech : submenuNonTech)}
+                          anchorEl={
+                            drop.endpoint == "Technical"
+                              ? submenuTech
+                              : submenuNonTech
+                          }
+                          open={Boolean(
+                            drop.endpoint == "Technical"
+                              ? submenuTech
+                              : submenuNonTech
+                          )}
                           onClose={handleCloseSubmenu}
                           anchorOrigin={{
                             vertical: "top",
@@ -248,8 +275,8 @@ function Navbar({bgcolor}) {
                           elevation="none"
                           PaperProps={{
                             style: {
-                              border:"1px solid #eee",
-                              marginLeft:"10px"
+                              border: "1px solid #eee",
+                              marginLeft: "10px",
                             },
                           }}
                         >
@@ -258,7 +285,7 @@ function Navbar({bgcolor}) {
                               key={subEndpoint.name}
                               sx={{ paddingX: 3 }}
                               onClick={() => {
-                                router.push(subEndpoint.endpoint)
+                                router.push(subEndpoint.endpoint);
                                 handleCloseSubmenu;
                               }}
                             >
@@ -275,7 +302,7 @@ function Navbar({bgcolor}) {
               <Box>
                 <Button
                   onClick={() => {
-                    router.push("/committee")
+                    router.push("/committee");
                     handleCloseNavMenu;
                   }}
                   sx={{ my: 2, color: "white", display: "block", mr: 4 }}
