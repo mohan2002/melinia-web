@@ -7,7 +7,7 @@ import React from 'react'
 
 function committee() {
   return (
-    <Box >
+    <Box>
       <Navbar bgcolor="#ED213A"/>
       <Container sx={{display:"flex",marginTop:"80px",xflexDirection:"column",flexWrap:"wrap",justifyContent:"space-between",gap:"30px",alignItems:"center"}}>
         <Box width="100%" display="flex" alignItems="center" justifyContent="center" mb={4}>
