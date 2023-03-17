@@ -14,7 +14,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
       data-aos-delay="100"
     > 
     
-      <Card sx={{ height: { xs: "780px", md: "420px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
+      <Card sx={{ height: { xs: "740px", md: "420px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
         <Grid container spacing={2} >
           <Grid item xs={12} md={6}>
             <CardMedia
@@ -42,7 +42,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                           fontSize: { xs: "10px", md: "18px" },
                           color: "grey",
                           fontWeight: "700",
-                          marginTop:"10px",
+                          marginTop:{xs:"2px",md:"10px"},
                         }}
                       >
                       WORKSHOP
@@ -52,7 +52,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                           fontSize: { xs: "10px", md: "16px" },
                           color: "grey",
                           fontWeight: "300",
-                          marginTop:"10px",
+                          marginTop:{xs:"2px",md:"10px"},
                           
                         }}
                       >

@@ -4,7 +4,7 @@ import React from "react";
 
 function ChiefGuest() {
   return (
-    <Box sx={{ marginTop: "60px" }}>
+    <Box sx={{ marginTop: "60px",height:"100%",width:"100%", background:"rgba(237, 33, 58, 0.12)",padding:"20px"  }}>
       <Container
         sx={{
           display: "flex",

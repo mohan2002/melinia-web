@@ -13,7 +13,7 @@ function EventsGrid() {
     setEventType("Non Technical");
   };
   return (
-    <Box sx={{ marginTop: "80px" }}>
+    <Box sx={{ marginTop: "80px",height:"100%",width:"100%", background:"rgba(237, 33, 58, 0.12)",padding:"20px" }}>
       <Container>
         {/* Events Header */}
         <Box
