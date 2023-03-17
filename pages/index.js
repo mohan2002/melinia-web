@@ -20,6 +20,8 @@ import HackathonCard from "@/common/components/HackathonCard";
 import WorkshopCard from "@/common/components/WorkshopCard";
 import Script from "next/script";
 import ConnectUs from "@/common/components/ConnectUs";
+import BottomFooter from "@/common/components/BottomFooter";
+import ChiefGuest from "@/common/components/ChiefGuest";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,7 +67,9 @@ export default function Home() {
       <QueryCard/>
       <Sponsors/>
       <MeliniaTimeline/>
+      <ChiefGuest/>
       <ConnectUs/>
+      <BottomFooter/>
     </div>
     </>
   );
