@@ -4,7 +4,7 @@ import React from 'react'
 
 function QueryCard() {
   return (
-    <Box sx={{marginTop:"200px"}}>
+    <Box sx={{marginTop:{md:"200px",xs:"80px"}}}>
         <Box width="100%" sx={{height:"220px",background:"#ED213A",display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
             <Container sx={{display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"space-between"}}>
                 <Box sx={{display:{xs:"none",md:"block"}}}>
