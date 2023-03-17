@@ -25,7 +25,7 @@ function committee() {
           <CommitteeProfileCard img="/images/lakshay.jpg" name="S Harshith" position="Join Secretary" designation="Msc Artificial Intelligence" phone="6381478010" mail="1931010mss@cit.edu"/>
         </Box>
         <Box width="100%"  display="flex" alignItems="center" justifyContent="center">
-         <CommitteeProfileCard img="/images/dd.jpeg" name="Shri Haritha" position="Treasurer" designation="Msc DataScience" phone="9842398623" mail="1933005mdcs@cit.edu.in"/>
+         <CommitteeProfileCard img="/images/shre.jpg" name="Shree Varshini R P" position="Treasurer" designation="Msc DataScience" phone="9360327752" mail="1932046mds@cit.edu.in"/>
         </Box>
         <Box width="100%"  display="flex" flexDirection={{xs:"column",md:"row"}} alignItems="center" justifyContent="space-around" gap={4}>
           <CommitteeProfileCard img="/images/jothi.jpeg" name="Jothi Bathra L" position="Student Coordinator" designation="Msc Decision and Computing Science" phone="9361229447" mail="1933018mdcs@cit.edu.in"/>
