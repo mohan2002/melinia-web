@@ -38,7 +38,7 @@ const ConnectUs = () => {
         <Typography variant="h4" fontWeight="700" mb={1}>
           CONNECT WITH US
         </Typography>
-        <Typography mb={4}>
+        <Typography mb={4} color="#6A6A6A">
           Feel free to reach us incase of any queries.{" "}
         </Typography>
         <Box sx={{ width: "100%", maxWidth: {xs:"90%",md:"80%"} }}>
