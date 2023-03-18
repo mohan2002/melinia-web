@@ -22,7 +22,7 @@ function committee() {
         </Box>
         <Box width="100%"  display="flex" flexDirection={{xs:"column",md:"row"}} alignItems="center" justifyContent="space-around" gap={4}>
           <CommitteeProfileCard img="/images/haritha.jpg" name="Shri Haritha" position="Secretary" designation="Msc Software Systems" phone="9843209778" mail="1931039mss@cit.edu.in"/>
-          <CommitteeProfileCard img="/images/lakshay.jpg" name="S Harshith" position="Join Secretary" designation="Msc Artificial Intelligence" phone="6381478010" mail="1931010mss@cit.edu"/>
+          <CommitteeProfileCard img="/images/lakshay.jpg" name="Lakshya Karwa" position="Joint Secretary" designation="Msc Aritificial Intelligence and Machine Learning"  phone="6381478010" mail="1931010mss@cit.edu"/>
         </Box>
         <Box width="100%"  display="flex" alignItems="center" justifyContent="center">
          <CommitteeProfileCard img="/images/shre.jpg" name="Shree Varshini R P" position="Treasurer" designation="Msc DataScience" phone="9360327752" mail="1932046mds@cit.edu.in"/>
@@ -30,7 +30,7 @@ function committee() {
         <Box width="100%"  display="flex" flexDirection={{xs:"column",md:"row"}} alignItems="center" justifyContent="space-around" gap={4}>
           <CommitteeProfileCard img="/images/jothi.jpeg" name="Jothi Bathra L" position="Student Coordinator" designation="Msc Decision and Computing Science" phone="9361229447" mail="1933018mdcs@cit.edu.in"/>
           <CommitteeProfileCard img="/images/mahi.jpeg" name="Mahi Anand V" position="Student Coordinator" designation="Msc DataScience" phone="9566977941" mail="1932023mds@cit.edu.in"/>
-          <CommitteeProfileCard img="/images/Rhithika.jpg" name="Rhithika Sree K S" position="Student Coordinator" designation="Msc Artificial Intelligence" phone="9080785254" mail="1934031aiml@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/Rhithika.jpg" name="Rhithika Sree K S" position="Student Coordinator" designation="Msc Aritificial Intelligence and Machine Learning" phone="9080785254" mail="1934031aiml@cit.edu.in"/>
         </Box>
       </Container>
 

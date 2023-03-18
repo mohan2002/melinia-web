@@ -43,7 +43,7 @@ function Banner() {
           textAlign:"center"
         }}
       >
-        Proudly organized and presented by Department of Computing Msc SS, DS,
+        Proudly organized and presented by Department of Computing MSc SS, DS,
         DCS, AIML.
       </Typography>
       <Box sx={{height:{xs:"60px",md:"100px"}}}>

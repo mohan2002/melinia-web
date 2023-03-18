@@ -2,7 +2,7 @@ import { Button, Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
-function EventBanner({data}) {
+function EventBanner({data,type}) {
   return (
     <Box display="flex" height="90%" alignItems="center" bgcolor="rgba(237, 33, 58, 0.12);">
       <Container>
@@ -16,7 +16,7 @@ function EventBanner({data}) {
             color="#6A6A6A"
             ml={0.4}
           >
-            Flagship Technical Event
+            {type}
           </Typography>
         </Box>
         <Box
@@ -48,7 +48,7 @@ function EventBanner({data}) {
               variant="contained"
               href={data.eventlink}
             >
-              Apply Event
+              Register
             </Button>
             </Box>
           </Box>

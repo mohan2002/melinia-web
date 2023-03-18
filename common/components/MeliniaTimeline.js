@@ -28,7 +28,7 @@ export default function MeliniaTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            9.00
+            9.00 am
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
@@ -39,7 +39,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Ceremony
+              Inaugration ceremony
             </Typography>
             <Typography>Melinia Day starts</Typography>
           </TimelineContent>
@@ -63,7 +63,7 @@ export default function MeliniaTimeline() {
             <Typography variant="h6" component="span">
               Workshop / Game of codes / Triathlon
             </Typography>
-            <Typography>A technical and non technical event starts</Typography>
+            <Typography>A Technical and Non Technical event starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -72,7 +72,7 @@ export default function MeliniaTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            11:30 am - 12.00 am
+            11:30 am - 12.00 pm
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
@@ -85,7 +85,7 @@ export default function MeliniaTimeline() {
             <Typography variant="h6" component="span">
               Innovation Odyssey / Coolest melinial / Tell-A-Tale
             </Typography>
-            <Typography>A technical and non technical event starts</Typography>
+            <Typography>A Technical and Non Technical event starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -164,7 +164,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              End of the day.
+              End of the day. Valediction program.
             </Typography>
             <Typography>Melinia Day ends with Prize distribution at Auditorium!</Typography>
           </TimelineContent>

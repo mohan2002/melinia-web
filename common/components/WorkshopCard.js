@@ -14,7 +14,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
       data-aos-delay="100"
     > 
     
-      <Card sx={{ height: { xs: "740px", md: "420px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
+      <Card sx={{ height: { xs: "740px", md: "400px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
         <Grid container spacing={2} >
           <Grid item xs={12} md={6}>
             <CardMedia
@@ -59,7 +59,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                 </Typography>
               </Box>
               <Typography variant="h4" component="h1" fontWeight="900" sx={{ fontSize: { xs: "22px", md: "27px" }}}>
-                REVIVE THE ENTREPRENEUR IN YOU
+                THE ENTREPRENEURIAL MINDSET
               </Typography>
               <Typography
                 variant="body2"
