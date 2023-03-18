@@ -30,7 +30,7 @@ const Countdown = () => {
     <Grid container justify="center" alignItems="center" bgcolor="rgba(41, 36, 101, 0.69)" p={2} borderRadius="10px" marginTop="-60px">
       <Grid item xs={3}>
         <Typography variant="h3" fontSize={{xs:"24px",md:"42px"}} align="center" color="white">
-          {countdown.days}
+          {countdown.days.toString().padStart(2, '0')}
         </Typography>
         <Typography variant="subtitle1"  align="center"  color="white">
           Days
@@ -38,7 +38,7 @@ const Countdown = () => {
       </Grid>
       <Grid item xs={3}>
         <Typography variant="h3" align="center" fontSize={{xs:"24px",md:"42px"}} color="white">
-          {countdown.hours}
+          {countdown.hours.toString().padStart(2, '0')}
         </Typography>
         <Typography variant="subtitle1" align="center"  color="white">
           Hours
@@ -46,7 +46,7 @@ const Countdown = () => {
       </Grid>
       <Grid item xs={3}>
         <Typography variant="h3" align="center" fontSize={{xs:"24px",md:"42px"}} color="white">
-          {countdown.minutes}
+          {countdown.minutes.toString().padStart(2, '0')}
         </Typography>
         <Typography variant="subtitle1" align="center" color="white">
           Minutes
@@ -54,7 +54,7 @@ const Countdown = () => {
       </Grid>
       <Grid item xs={3}>
         <Typography variant="h3" align="center" fontSize={{xs:"24px",md:"42px"}} color="white">
-          {countdown.seconds}
+          {countdown.seconds.toString().padStart(2, '0')}
         </Typography>
         <Typography variant="subtitle1" align="center"  color="white">
           Seconds

@@ -37,7 +37,7 @@ function Event() {
   return (
     <Box>
       <Box height="100vh">
-        <Navbar bgcolor="#ED213A"/>
+        <Navbar bgcolor="#ED213A" type="Non Technical Event"/>
         <EventBanner data={data}/>
       </Box>
       <EventDetailsCard data={data}/>

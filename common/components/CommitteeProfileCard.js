@@ -10,7 +10,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width:"320px"
+    width:"320px",
+    height:{xs:"auto",md:"340px"}
   },
   image: {
     width: '100%',
@@ -37,7 +38,7 @@ function CommitteeProfileCard({img,name,position,designation,phone,mail}) {
         <Typography variant="body2" color="textSecondary" component="p" fontWeight="700" sx={{textDecoration:"underline"}}>
           {position}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p" mt={0.5}>
+        <Typography variant="body2" color="textSecondary" component="p" mt={0.5} textAlign="center">
           {designation}
         </Typography>
        
