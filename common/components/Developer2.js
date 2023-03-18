@@ -35,8 +35,8 @@ function Developer2() {
   return (
     <Box sx={{ marginTop: "80px", marginBottom: "100px" }}>
       <Card sx={{ height: { xs: "auto", md: "420px" } }} elevation="none">
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6} sx={{ height: "100%" }}>
+        <Grid container spacing={2} >
+          <Grid item xs={12} md={6} sx={{ order: { xs: 2, md: 1 } }}>
             <CardContent
               sx={{
                 height: "400px",
@@ -84,7 +84,7 @@ function Developer2() {
               </Box>
             </CardContent>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{ order: { xs: 1, md: 2 } }}>
             <img
               src="/images/guna1.jpg"
               style={{

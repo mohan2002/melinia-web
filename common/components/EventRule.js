@@ -5,13 +5,13 @@ import TimerOutlinedIcon from "@mui/icons-material/TimerOutlined";
 import CategoryOutlinedIcon from "@mui/icons-material/CategoryOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 
-function EventRule() {
+function EventRule({ data }) {
   return (
     <Box sx={{ marginTop: "60px" }}>
       <Container>
         <Card
           sx={{
-            height: {xs:"auto",md:"250px"},
+            height: { xs: "auto", md: "auto" },
             width: "100%",
             display: "flex",
             flexDirection: "row",
@@ -25,7 +25,7 @@ function EventRule() {
           elevation="none"
         >
           <Box
-            width={{ xs: "100%", md: "70%" }}
+            width={{ xs: "100%", md: "80%" }}
             height={{ xs: "50%", md: "100%" }}
             p={{ xs: 2, md: 4 }}
             display="flex"
@@ -33,27 +33,23 @@ function EventRule() {
             justifyContent="center"
           >
             <Typography variant="h5" fontWeight="700">
-              Rules of the Event
+              {data.eventname == "WORKSHOP" ? "Details" : "Rules / Rounds of the Event"}
             </Typography>
-            <List sx={{ marginTop: "10px" }}>
-              <ListItem>
-                <Typography color="#6E798C">
-                  1. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod.
-                </Typography>
-              </ListItem>
-              <ListItem>
-                <Typography color="#6E798C">
-                  2. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod.
-                </Typography>
-              </ListItem>
-              <ListItem>
-                <Typography color="#6E798C">
-                  3. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod.
-                </Typography>
-              </ListItem>
+            <List sx={{ marginTop: "10px",display:"flex",flexDirection:"column" }}>
+              {data.rounds && data.rounds.map((item, index) => (
+                <ListItem key={index} sx={{display:"flex",flexDirection:"column",alignItems:"flex-start"}}>
+                  <Typography color="#6E798C" fontWeight="600">{data.eventname !== "WORKSHOP" && `Round ${index+1}:`} {item.title}</Typography>
+                  <Box sx={{display:"flex",flexDirection:"column" }}>
+                  {
+                    item.rules.map((point,index) => (
+                      <ListItem key={index}>
+                        <Typography  color="#6E798C">{index+1}{"."} {point}</Typography>
+                      </ListItem>
+                    ))
+                  }
+                  </Box>
+                </ListItem>
+              ))}
             </List>
           </Box>
           <Box
@@ -63,7 +59,7 @@ function EventRule() {
             flexDirection="column"
             justifyContent="center"
             gap={2}
-            ml={{xs:6,md:4}}
+            ml={{ xs: 6, md: 4 }}
             sx={{
               borderTop: { xs: "1px solid #eee", md: "none" },
               paddingTop: { xs: 2, md: 0 },
@@ -71,25 +67,22 @@ function EventRule() {
               borderTopWidth: { md: "1px" },
               borderLeft: { md: "1px solid #eee" },
               paddingLeft: { md: 4 },
-              marginBottom:{xs:2,md:0},
+              marginBottom: { xs: 2, md: 0 },
             }}
           >
-            <Box
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              gap={2}
-            >
+            <Box display="flex" flexDirection="row" alignItems="center" gap={2} pr={2}>
               <TimerOutlinedIcon sx={{ color: "#6A6A6A" }} />
-              <Typography color="#6E798C">30 mins</Typography>
+              <Typography color="#6E798C">{data.durationevent}</Typography>
             </Box>
             <Box display="flex" flexDirection="row" alignItems="center" gap={2}>
-                <CategoryOutlinedIcon sx={{ color: "#6A6A6A" }}/>
-                <Typography color="#6E798C">Resources will be Provided</Typography>
+              <CategoryOutlinedIcon sx={{ color: "#6A6A6A" }} />
+              <Typography color="#6E798C">
+                Own Resources
+              </Typography>
             </Box>
             <Box display="flex" flexDirection="row" alignItems="center" gap={2}>
-                <PermIdentityOutlinedIcon sx={{ color: "#6A6A6A" }}/>
-                <Typography color="#6E798C">Individual</Typography>
+              <PermIdentityOutlinedIcon sx={{ color: "#6A6A6A" }} />
+              <Typography color="#6E798C">{data.no_participants}</Typography>
             </Box>
           </Box>
         </Card>
@@ -98,4 +91,4 @@ function EventRule() {
   );
 }
 
-export default EventRule
+export default EventRule;

@@ -27,33 +27,41 @@ const pages = [
         endpoint: "Technical",
         subEndpoints: [
           {
-            name: "UI/UX",
-            endpoint: "/events/technical/ui-ux",
+            name: "UX Unleashed",
+            endpoint: "/events/technical/uiunleashed",
           },
           {
-            name: "Datathon",
-            endpoint: "/events/technical/datathon",
+            name: "Coolest Melinial",
+            endpoint: "/events/technical/coolestmelinial",
           },
           {
-            name: "Jumbled Code",
-            endpoint: "/events/technical/jumbledcode",
+            name: "Game of Codes",
+            endpoint: "/events/technical/gameofcodes",
           },
+          {
+            name:"Hogwarts Code Quest",
+            endpoint: "/events/technical/hogwartscodequest",
+          },
+          {
+            name: "Innovation Odyssey",
+            endpoint: "/events/technical/innovationodyssey",
+          },
+          {
+            name: "Tell-a-Tale",
+            endpoint: "/events/technical/tellatale",
+          }
         ],
       },
       {
         endpoint: "Non Technical",
         subEndpoints: [
           {
-            name: "Inspector Gadget",
-            endpoint: "/events/nontechnical/inspector-gadget",
+            name: "Triathlon",
+            endpoint: "/events/nontechnical/triathlon",
           },
           {
-            name: "AR Treasure Hunt",
-            endpoint: "/events/nontechnical/ar-treasure-hunt",
-          },
-          {
-            name: "Deep Magic",
-            endpoint: "/events/nontechnical/deep-magic",
+            name: "The 221B Puzzle Hunt",
+            endpoint: "/events/nontechnical/221bpuzzlehunt",
           },
         ],
       },
@@ -197,6 +205,7 @@ function Navbar({ bgcolor }) {
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block", mr: 4 }}
+                  href="/"
                 >
                   Home
                 </Button>

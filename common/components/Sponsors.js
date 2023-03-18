@@ -4,11 +4,8 @@ import React from 'react'
 
 function Sponsors() {
   const sponsors = [
-    { name: "Sponsor A", logo: "https://via.placeholder.com/100x50" },
-    { name: "Sponsor B", logo: "https://via.placeholder.com/100x50" },
-    { name: "Sponsor C", logo: "https://via.placeholder.com/100x50" },
-    { name: "Sponsor D", logo: "https://via.placeholder.com/100x50" },
-    { name: "Sponsor E", logo: "https://via.placeholder.com/100x50" },
+    { name: "Smartail", logo: "https://smartail.ai/wp-content/uploads/2021/09/Site-Identity-Logo-Smartail.svg" },
+    { name: "Root Quotient", logo: "https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png" },
   ];
   return (
     <Box sx={{marginTop:"80px"}}>
@@ -19,8 +16,8 @@ function Sponsors() {
         <Grid container spacing={2} justifyContent="center">
           {sponsors.map((sponsor) => (
             <Grid item key={sponsor.name}>
-              <Box display="flex" alignItems="center" justifyContent="center" p={1} borderRadius={1} bgcolor="background.paper" width={150}>
-                <img src={sponsor.logo} alt={sponsor.name} width="100" height="50" />
+              <Box display="flex" alignItems="center" justifyContent="center" p={1} borderRadius={1} bgcolor="background.paper" width={{xs:150,md:250}}>
+                <img src={sponsor.logo} alt={sponsor.name} width="100%" height="50" />
               </Box>
             </Grid>
           ))}
