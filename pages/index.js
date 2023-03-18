@@ -22,6 +22,7 @@ import Script from "next/script";
 import ConnectUs from "@/common/components/ConnectUs";
 import BottomFooter from "@/common/components/BottomFooter";
 import ChiefGuest from "@/common/components/ChiefGuest";
+import Countdown from "@/common/components/Countdown";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,6 +61,9 @@ export default function Home() {
         <ParticleComponent />
         <Banner/>
       </Box>
+      <Container>
+        <Countdown/>
+      </Container>
       <AboutMelinia/>
       <EventsGrid/>
       <WorkshopCard />
