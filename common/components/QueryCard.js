@@ -1,9 +1,8 @@
 import { Button, Card, Grid, Typography } from '@mui/material'
 import { Box, Container } from '@mui/system'
-import React, { useRef } from 'react'
+import React from 'react'
 
 function QueryCard() {
-    const scrollRef = useRef(null);
 
   const handleClick = () => {
     window.scrollTo({
@@ -12,7 +11,7 @@ function QueryCard() {
     });
   };
   return (
-    <Box sx={{marginTop:{xs:"60px",md:"200px"}}} ref={scrollRef}>
+    <Box sx={{marginTop:{xs:"60px",md:"200px"}}} >
         <Box width="100%" sx={{height:"220px",background:"#ED213A",display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
             <Container sx={{display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"space-between"}}>
                 <Box sx={{display:{xs:"none",md:"block"}}}>

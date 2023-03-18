@@ -9,7 +9,7 @@ import SellIcon from "@mui/icons-material/Sell";
 import EventBusyIcon from "@mui/icons-material/EventBusy";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-function EventDetailsCard() {
+function EventDetailsCard({data}) {
   return (
     <Box sx={{ marginTop: "40px" }}>
       <Container>
@@ -59,7 +59,7 @@ function EventDetailsCard() {
                   color="#6E798C"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>COMPUTING BLOCK, CM101</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.location}</Typography>
               </Grid>
               <Grid
                 item
@@ -77,7 +77,7 @@ function EventDetailsCard() {
                   color="#6E798C"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>5TH APRIL, 2023</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.date}</Typography>
               </Grid>
               <Grid
                 item
@@ -95,7 +95,7 @@ function EventDetailsCard() {
                   color="#6E798C"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>12.30 PM</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.time}</Typography>
               </Grid>
               <Grid
                 item
@@ -131,7 +131,7 @@ function EventDetailsCard() {
                   fontSize="medium"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>RS 500</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.registrationamt}</Typography>
               </Grid>
               <Grid
                 item
@@ -149,12 +149,12 @@ function EventDetailsCard() {
                   fontSize="medium"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>Deadline: 2ND APRIL</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>Deadline: {data.deadlinereg}</Typography>
               </Grid>
             </Grid>
           </Box>
           <Box width="100%" height="15%" display="flex" alignItems="flex-start" justifyContent="flex-end" pr={2}>
-            <Button>Apply Event
+            <Button href={data.eventlink}>Apply Event
                 <ArrowForwardIcon  sx={{fontSize:"18px",marginLeft:"2px"}}/>
             </Button>
           </Box>

@@ -21,12 +21,12 @@ function ChiefGuest() {
             We Proudly welcome our chief guest to Melinia 2k23
           </Typography>
 
-          <Avatar src="https://media.licdn.com/dms/image/C4E03AQHi40Xr3Q6m7w/profile-displayphoto-shrink_800_800/0/1528135383615?e=1684368000&v=beta&t=ynL6NeMJBWCg4SxOJ5cZoRHwpFYJONjL2LXrxDAGQ_c" sx={{width:300,objectFit:"contain",height:300,borderRadius:"100%"}} />
+          <Avatar src="https://media.licdn.com/dms/image/C4D03AQFyruBk05g-dQ/profile-displayphoto-shrink_800_800/0/1520617607420?e=1684368000&v=beta&t=Tbataps6udlFCD_keiecR6fTlcNiA9u2GAMRJnnxj2E" sx={{width:300,objectFit:"contain",height:300,borderRadius:"100%"}} />
 
-          <Typography mt={4} variant="h6" fontWeight="700">Kannan Ganesan</Typography>
-          <Typography variant="subtitle2">Chief Technology Officer at SMARTAIL</Typography>
+          <Typography mt={4} variant="h6" fontWeight="700">Swaminathan Ganesan</Typography>
+          <Typography variant="subtitle2">Co-Founder and CEO at SMARTAIL</Typography>
 
-          <Typography color="#6E798C" textAlign="center" sx={{width:{sm:"80%",md:"70%"}}} mt={2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</Typography>
+          <Typography color="#6E798C" textAlign="center" sx={{width:{sm:"80%",md:"70%"}}} mt={2}>We would like to invite Mr Swaminathan Ganesan to our National Level Technical Symposium Melinia 2k23. As a co-founder and CEO in the education sector, your experience with DeepGrade AI and DeepGrade DT would be of great interest to our audience. Thank you for considering our invitation, and we hope to see you soon.</Typography>
         </Box>
       </Container>
     </Box>

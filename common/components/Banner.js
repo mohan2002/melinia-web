@@ -16,7 +16,7 @@ function Banner() {
     >
       <Typography
         sx={{
-          fontSize: { xs: "40px", md: "100px" },
+          fontSize: { xs: "48px", md: "100px" },
           color: "white",
           fontWeight: "700",
         }}
