@@ -5,7 +5,7 @@ const Countdown = () => {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   const calculateCountdown = () => {
-    const eventDate = new Date('2023-04-05T12:00:00');
+    const eventDate = new Date('2023-04-05T09:00:00');
     const currentDate = new Date();
 
     const timeDifference = eventDate.getTime() - currentDate.getTime();

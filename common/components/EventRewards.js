@@ -16,7 +16,7 @@ function EventRewards({data}) {
                 </Box>
                 <Box height="40%" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                     <Box width="60%" height="35px" bgcolor="rgba(228, 179, 55, 0.1)" display="flex" flexDirection="column" alignItems="center" justifyContent="center" borderRadius="10px">
-                        <Typography color="rgba(232, 174, 26, 1)">{data.prizeamount[0]}</Typography>
+                        <Typography color="rgba(232, 174, 26, 1)">₹{data.prizeamount[0]}</Typography>
                     </Box>
                 </Box>
             </Card>}
@@ -30,7 +30,7 @@ function EventRewards({data}) {
                 </Box>
                 <Box height="40%" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                     <Box width="60%" height="35px" bgcolor="rgba(110, 112, 127, 0.1)" display="flex" flexDirection="column" alignItems="center" justifyContent="center" borderRadius="10px">
-                        <Typography color="rgba(110, 112, 127, 1)">{data.prizeamount[1]}</Typography>
+                        <Typography color="rgba(110, 112, 127, 1)">₹{data.prizeamount[1]}</Typography>
                     </Box>
                 </Box>
             </Card>}
@@ -44,7 +44,7 @@ function EventRewards({data}) {
                 </Box>
                 <Box height="40%" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                     <Box width="60%" height="35px" bgcolor="rgba(154, 136, 111, 0.1)" display="flex" flexDirection="column" alignItems="center" justifyContent="center" borderRadius="10px">
-                        <Typography color="rgba(154, 136, 111, 1)">{data.prizeamount[2]}</Typography>
+                        <Typography color="rgba(154, 136, 111, 1)">₹{data.prizeamount[2]}</Typography>
                     </Box>
                 </Box>
             </Card>}

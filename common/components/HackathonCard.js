@@ -53,7 +53,7 @@ const HackathonCard = ({ title, description, imageUrl }) => {
                         27th – 28th March(Round 1) & 1st April(Round 2)
                   </Typography>
                 </Box>
-                <Typography variant="h4" component="h1" fontWeight="900" sx={{ fontSize: { xs: "22px", md: "27px" }}}>
+                <Typography variant="h4" component="h1" fontWeight="700" sx={{ fontSize: { xs: "22px", md: "28px" }}}>
                   ABOUT THE MELINIA HACKATHON
                 </Typography>
                 <Typography
@@ -63,6 +63,7 @@ const HackathonCard = ({ title, description, imageUrl }) => {
                   letterSpacing={0.6}
                   lineHeight={1.8}
                   sx={{textIndent:"80px"}}
+                  color="#6A6A6A"
                 >
                   Being one of the flagship events of Melinia, Hackathon aims to bring out the brainstorming skills and team’s coordination in the participants. The outcomes expected are viable and feasible product prototypes that will enhance the lifestyles of students, professors and improve the working standard of institutions in general.
                 </Typography>

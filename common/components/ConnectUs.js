@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import { toast } from "react-toastify";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -11,6 +12,16 @@ const validationSchema = Yup.object().shape({
 });
 
 const ConnectUs = () => {
+  const notify = () => toast.success('We will get back to you shortly!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -20,7 +31,28 @@ const ConnectUs = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      fetch("https://melina-api.onrender.com/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name:values.name,
+          email:values.email,
+          phoneNumber:values.phone,
+          message:values.query
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          // Handle the API response
+          console.log(data);
+          notify()
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+
       formik.resetForm();
     },
   });
@@ -35,13 +67,13 @@ const ConnectUs = () => {
           flexDirection: "column",
         }}
       >
-        <Typography variant="h4" fontWeight="700" mb={1}>
+        <Typography variant="h4" component="h1" fontWeight="700" sx={{ fontSize: { xs: "22px", md: "32px" }}} mb={1}>
           CONNECT WITH US
         </Typography>
         <Typography mb={4} color="#6A6A6A">
           Feel free to reach us incase of any queries.{" "}
         </Typography>
-        <Box sx={{ width: "100%", maxWidth: {xs:"90%",md:"80%"} }}>
+        <Box sx={{ width: "100%", maxWidth: { xs: "90%", md: "80%" } }}>
           <form onSubmit={formik.handleSubmit}>
             <TextField
               margin="normal"
