@@ -3,6 +3,7 @@ import Cover from "@/common/components/Banner";
 import Banner from "@/common/components/Banner";
 import Navbar from "@/common/components/navbar/Navbar";
 import ParticleComponent from "@/common/components/ParticleComponent";
+import { CircularProgress, makeStyles } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
