@@ -101,7 +101,7 @@ export default function MeliniaTimeline() {
             <TimelineDot color="primary" variant="outlined">
               <DinnerDiningIcon />
             </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+            <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
@@ -123,7 +123,7 @@ export default function MeliniaTimeline() {
             <TimelineDot color="primary" variant="outlined">
               <HotelIcon />
             </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+            <TimelineConnector/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
@@ -145,7 +145,7 @@ export default function MeliniaTimeline() {
             <TimelineDot color="primary" variant="outlined">
               <HotelIcon />
             </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+            <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
