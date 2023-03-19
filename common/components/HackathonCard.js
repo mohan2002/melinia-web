@@ -78,7 +78,7 @@ const HackathonCard = ({ title, description, imageUrl }) => {
             <Grid item xs={12} md={6} p={{xs:0,md:2}} display="flex" alignItems="center" justifyContent="center">
               <CardMedia
                 component="img"
-                image="https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FHackathon.jpg?alt=media&token=81a336a2-af2b-4999-940d-00ce29662308"
+                image="/images/Hackathon.jpg"
                 alt={title}
                 width="100%"
                 style={{ objectFit: "contain" }}

@@ -23,10 +23,10 @@ export default function EventCard({event,url}) {
           alt="green iguana"
         />
         <CardContent>
-          <Box width="100%" display="flex" flexDirection="column" alignItems="flex-start" gap={0.5}>
+          <Box width="100%" display="flex" flexDirection="column" alignItems="flex-start" gap={1}>
             <Box mt={1}>
                 <Typography fontSize={{xs:12,md:14}} color="#6A6A6A">{event.date}</Typography>
-                <Typography fontSize={{xs:12,md:14}} color="#6A6A6A">{event.time}</Typography>
+                {event.eventname == "COOLEST MELINIAL" ?  <Typography fontSize={{xs:12,md:14}} color="#6A6A6A">11.30 - 01.00 PM & 02:30 - 04:30 PM</Typography> :  <Typography fontSize={{xs:12,md:14}} color="#6A6A6A">{event.time}</Typography>}
             </Box>
             <Box>
                 <Typography variant="h5" fontWeight="700" mb={0.5} fontSize="20px">{event.eventname}</Typography>

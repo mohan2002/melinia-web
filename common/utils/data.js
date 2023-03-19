@@ -1,9 +1,9 @@
 const technicaldata = {
   coolestmelinial: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FCoolest-Melinial.png?alt=media&token=199838b2-158c-4869-ab07-00fb3114ab74",
+    img: "/images/Coolest-Melinial.png",
     eventname: "COOLEST MELINIAL",
     date: "Apr 5, 2023",
-    time: "12:00 - 01:00 PM (R1) & 02:30 - 04:30 PM (R2)",
+    time: "11.30 - 11.55 AM (R1) 12:00 - 01:00 PM (R2) & 02:30 - 04:30 PM (R3)",
     shortdescription:
       "Being one of the flagship events of Melinia, Coolest melinial aims to increase the confidence and bring out the critical thinking and communication skills in the participants.",
     description:
@@ -16,15 +16,26 @@ const technicaldata = {
       {
         title: "The Central Park",
         rules: [
+          "Duration for an individual would be 25mins",
           "Participants will be given a set of aptitude questions on various concepts (Verbal and quantitative aptitude).",
         ],
       },
       {
-        title: " Dare to be Different",
+        title: "Dare to be Different",
         rules: [
+          "Duration for a team would be 30 mins",
           "A topic for group discussion will be assigned to participants ( a team of 5 to 6 members ). They will be discussing the pros and cons of the given topic. ",
           "Each team will have 2 representatives to evaluate each individual in a team by their performance.",
           "The best performers will be selected for the next round.",
+        ],
+      },
+      {
+        title: "Thrive Survive",
+        rules: [
+          "Duration for an individual would be 25mins",
+          "The interview will assess the participant's ability to deal with stress, think logically, and think quickly",
+          "For the interview, participants will be assigned to their respective panels.",
+          "The best performers will be selected as the winners.",
         ],
       },
     ],
@@ -36,7 +47,7 @@ const technicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   gameofcodes: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FGame-of-codes.png?alt=media&token=b1ee74b2-9d19-4c25-99c6-d40ebdce0785",
+    img: "/images/Game-of-codes.png",
     eventname: "GAME OF CODES",
     date: "Apr 5, 2023",
     time: "10:00 - 10:45 AM (R1) & 10:50 - 11:30 AM (R2)",
@@ -75,7 +86,7 @@ const technicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   uiunleashed: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FUX-unleashed.jpg?alt=media&token=3a96ad14-6429-483b-86a8-81a637517f53",
+    img: "/images/UX-unleashed.jpg",
     eventname: "UX UNLEASHED",
     date: "Apr 5, 2023",
     time: "02.00PM - 03.15PM",
@@ -105,14 +116,13 @@ const technicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   hogwartscodequest: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FCode-hunt.jpg?alt=media&token=1c6550c9-fac3-41e6-b47c-d2cfd7fa3527",
+    img: "/images/Code-hunt.jpg",
     eventname: "HOGWARTS CODE QUEST",
     date: "Apr 5, 2023",
     time: "12.00 - 01:00 PM (R1) & 02:00 PM - 04:00 PM",
     shortdescription:
-      "Join the Wizarding Code Hunt for a magical adventure testing your physical and coding skills. Teams of 3-4 will face challenges across four rounds, unlocking clues and encountering enchanted objects along the way.",
-    description:
-      "Welcome, wizards! Are you ready to embark on a thrilling Harry Potter-themed adventure that will test your physical and coding skills? The Wizarding Code Hunt is the event for you! Gather a team of 3-4 participants and get ready to complete four rounds of challenges over a three-hour duration. The team that completes the hunt list and finds the treasure in the shortest amount of time wins the competition. Don't forget to use your alohomora skills to unlock the clues along the way! Join us for an exciting and magical experience, where you'll encounter enchanted objects, spells, and magical creatures. Expecto patronum!",
+      "Welcome, wizards! Are you ready to embark on a thrilling Harry Potter-themed adventure that will test your physical and coding skills? The Hogwarts Code Quest is the event for you! Gather a team of 3-4 participants and get ready to complete four rounds of challenges over a three-hour duration. The team that completes the hunt list and finds the treasure in the shortest amount of time wins the competition. Don't forget to use your alohomora skills to unlock the clues along the way! Join us for an exciting and magical experience, where you'll encounter enchanted objects, spells, and magical creatures. Get ready to embark on an exciting adventure where you'll uncover hidden treasures inspired by the world-renowned Harry Potter universe. Expecto patronum!",
+    description:"Welcome, wizards! Are you ready to embark on a thrilling Harry Potter-themed adventure that will test your physical and coding skills? The Hogwarts Code Quest is the event for you! Gather a team of 3-4 participants and get ready to complete four rounds of challenges over a three-hour duration. The team that completes the hunt list and finds the treasure in the shortest amount of time wins the competition. Don't forget to use your alohomora skills to unlock the clues along the way! Join us for an exciting and magical experience, where you'll encounter enchanted objects, spells, and magical creatures. Get ready to embark on an exciting adventure where you'll uncover hidden treasures inspired by the world-renowned Harry Potter universe. Expecto patronum!",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
     contactno: "77086 61963",
@@ -135,7 +145,7 @@ const technicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   innovationodyssey: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/innov.png?alt=media&token=2a962dbe-3d70-4606-a276-17d3504bd260",
+    img: "/images/Innovation-Odyssey.png",
     eventname: "INNOVATION ODYSSEY",
     date: "Apr 5, 2023",
     time: "11.30 – 1.00 pm (R1) & 3.00-4.00 pm (R2)",
@@ -172,7 +182,7 @@ const technicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   tellatale: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FTell-a-tale.png?alt=media&token=dc8668cd-84bc-4caa-ad1f-428e196ddf60",
+    img: "/images/Tell-a-tale.png",
     eventname: "TELL-A-TALE",
     date: "Apr 5, 2023",
     time: "12:00 - 01:00 PM (R1) & 02:00 - 03:30 PM (R2)",
@@ -213,7 +223,7 @@ const technicaldata = {
 };
 const nontechnicaldata = {
   triathlon: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Triathlon.gif?alt=media&token=48fa03ce-9555-471e-bd2b-43116772d642",
+    img: "/images/Triathlon.jpg",
     eventname: "TRIATHLON",
     date: "Apr 5, 2023",
     time: "02.00PM - 03.00PM",
@@ -256,7 +266,7 @@ const nontechnicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   "221bpuzzlehunt": {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2F221B-Puzzle%20Hunting.jpg?alt=media&token=6eaad3eb-a695-4751-814e-701d2460a50d",
+    img: "/images/221B-PuzzleHunting.jpg",
     eventname: "THE 221B PUZZLE HUNT",
     date: "Apr 5, 2023",
     time: "10.30AM - 11.15AM",
@@ -296,7 +306,7 @@ const nontechnicaldata = {
   },
 };
 const hackathon = {
-  img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FHackathon.jpg?alt=media&token=81a336a2-af2b-4999-940d-00ce29662308",
+  img: "/images/Hackathon.jpg",
   eventname: "HACKATHON",
   date: "27th – 28th March(Round 1) & 1st April(Round 2)",
   time: "Not Specific",
@@ -334,7 +344,7 @@ const hackathon = {
   eventlink: "https://unstop.com/hackathons/hackathon-2k23-melinia-2k23-coimbatore-institute-of-technology-cit-coimbatore-646397",
 };
 const workshop = {
-  img: "/images/workshop.jpeg",
+  img: "/images/Workshop.png",
   eventname: "WORKSHOP",
   date: "1st April",
   time: "10.00 - 11.30 PM",
