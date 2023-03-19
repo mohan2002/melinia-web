@@ -15,11 +15,13 @@ import HotelIcon from "@mui/icons-material/Hotel";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
+import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+import SkipNextIcon from '@mui/icons-material/SkipNext';
 
 export default function MeliniaTimeline() {
   return (
     <Box maxWidth="md" mx="auto" sx={{marginTop:"80px"}} data-aos="fade-right" data-aos-delay="120">
-      <Typography variant="h4" fontWeight="700" textAlign="center" mb={4}>MELINIA DAY</Typography>
+      <Typography variant="h4" component="h1" fontWeight="700" sx={{ fontSize: { xs: "22px", md: "32px" }}} textAlign="center" mb={4}>MELINIA DAY</Typography>
       <Timeline position="alternate" sx={{ width: "100%" }}>
         <TimelineItem>
           <TimelineOppositeContent
@@ -32,8 +34,8 @@ export default function MeliniaTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
-            <TimelineDot>
-              <AlarmOnIcon />
+            <TimelineDot color="secondary">
+              <AlarmOnIcon/>
             </TimelineDot>
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
@@ -54,8 +56,8 @@ export default function MeliniaTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
-            <TimelineDot color="primary" >
-              <LightModeIcon />
+            <TimelineDot color="primary" variant="outlined">
+              <SkipPreviousIcon />
             </TimelineDot>
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
@@ -76,8 +78,8 @@ export default function MeliniaTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{height:"20px"}}/>
-            <TimelineDot color="primary" >
-              <LightModeIcon />
+            <TimelineDot color="primary" variant="outlined">
+              <SkipPreviousIcon />
             </TimelineDot>
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
@@ -119,9 +121,9 @@ export default function MeliniaTimeline() {
                 01.30 pm - 02.30 pm
             </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector sx={{height:"40px"}}/>
+            <TimelineConnector sx={{height:"60px"}}/>
             <TimelineDot color="primary" variant="outlined">
-              <HotelIcon />
+              <SkipNextIcon />
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
           </TimelineSeparator>
@@ -141,9 +143,9 @@ export default function MeliniaTimeline() {
                 02.00 pm - 02.30 pm
             </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector sx={{height:"40px"}}/>
+            <TimelineConnector sx={{height:"80px"}}/>
             <TimelineDot color="primary" variant="outlined">
-              <HotelIcon />
+              <SkipNextIcon />
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
           </TimelineSeparator>

@@ -58,7 +58,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                       5TH APRIL 10.00 - 11.30 AM
                 </Typography>
               </Box>
-              <Typography variant="h4" component="h1" fontWeight="900" sx={{ fontSize: { xs: "22px", md: "27px" }}}>
+              <Typography variant="h4" component="h1" fontWeight="700" sx={{ fontSize: { xs: "22px", md: "28px" }}}>
                 THE ENTREPRENEURIAL MINDSET
               </Typography>
               <Typography
@@ -68,6 +68,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                 letterSpacing={0.6}
                 lineHeight={1.8}
                   sx={{textIndent:"80px"}}
+                  color="#6A6A6A"
               >
                 Are you an aspiring entrepreneur looking to learn from a successful founder? Join Prashanth Ganesh, founder of PreSkale, and our alumni, for "Revive the Entrepreneur in You", a one-day workshop that will provide you with the tools and resources to launch and grow your own business. Don't miss out on this exciting opportunity to revive the entrepreneur in you!
                 </Typography>

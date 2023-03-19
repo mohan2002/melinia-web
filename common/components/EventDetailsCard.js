@@ -77,7 +77,8 @@ function EventDetailsCard({data}) {
                   color="#6E798C"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.date}</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.time}</Typography>
+
               </Grid>
               <Grid
                 item
@@ -95,7 +96,7 @@ function EventDetailsCard({data}) {
                   color="#6E798C"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.time}</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.date}</Typography>
               </Grid>
               <Grid
                 item
