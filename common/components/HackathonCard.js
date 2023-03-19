@@ -19,12 +19,12 @@ const HackathonCard = ({ title, description, imageUrl }) => {
       data-aos-delay="100"
     > 
     
-      <Card sx={{ height: { xs: "760px", md: "400px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
-        <Grid container spacing={4} sx={{ flexDirection: { xs: 'column-reverse', md: 'row' } }}>
+      <Card sx={{ height: { xs: "670px", md: "400px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
+        <Grid container spacing={{xs:0,md:4}} sx={{ flexDirection: { xs: 'column-reverse', md: 'row' } }}>
           <Grid item xs={12} md={6} sx={{ height: "100%" }}>
               <CardContent
                 sx={{
-                  height: "400px",
+                  height: {xs:"auto",md:"400px"},
                   display: "flex",
                   alignItems: "flex-start",
                   justifyContent: "center",
@@ -75,15 +75,14 @@ const HackathonCard = ({ title, description, imageUrl }) => {
               </CardContent>
             </Grid>
           
-            <Grid item xs={12} md={6} p={2}>
+            <Grid item xs={12} md={6} p={{xs:0,md:2}} display="flex" alignItems="center" justifyContent="center">
               <CardMedia
                 component="img"
                 image="https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FHackathon.jpg?alt=media&token=81a336a2-af2b-4999-940d-00ce29662308"
                 alt={title}
                 width="100%"
-                style={{ objectFit: "contain",objectPosition:{xs:"center",md:"left"} }}
+                style={{ objectFit: "contain" }}
                 sx={{height:{xs:"300px",md:"100%"}}}
-
               />
             </Grid>
           
