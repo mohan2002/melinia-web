@@ -19,12 +19,12 @@ const HackathonCard = ({ title, description, imageUrl }) => {
       data-aos-delay="100"
     > 
     
-      <Card sx={{ height: { xs: "670px", md: "400px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
+      <Card sx={{ height: "auto",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px"  }} elevation="none">
         <Grid container spacing={{xs:0,md:4}} sx={{ flexDirection: { xs: 'column-reverse', md: 'row' } }}>
           <Grid item xs={12} md={6} sx={{ height: "100%" }}>
               <CardContent
                 sx={{
-                  height: {xs:"auto",md:"400px"},
+                  height: "auto",
                   display: "flex",
                   alignItems: "flex-start",
                   justifyContent: "center",
@@ -82,7 +82,7 @@ const HackathonCard = ({ title, description, imageUrl }) => {
                 alt={title}
                 width="100%"
                 style={{ objectFit: "contain" }}
-                sx={{height:{xs:"300px",md:"100%"}}}
+                sx={{height:{xs:"auto",md:"100%"}}}
               />
             </Grid>
           

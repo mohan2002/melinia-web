@@ -14,22 +14,22 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
       data-aos-delay="100"
     > 
     
-      <Card sx={{ height: { xs: "670px", md: "400px",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" } }} elevation="none">
+      <Card sx={{ height: "auto",border:"1px solid #eee",boxShadow:"box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px" }} elevation="none">
         <Grid container spacing={2} >
-          <Grid item xs={12} md={6} >
+          <Grid item xs={12} md={6}>
             <CardMedia
               component="img"
               image="/images/workshop.jpeg"
               alt={title}
               width="100%"
-              style={{ objectFit: "contain",objectPosition:{xs:"center",md:"left"} }}
-              sx={{height:{xs:"250px",md:"100%",paddingLeft:{xs:"0px",md:"20px"}}}}
+              style={{ objectFit: "contain",objectPosition:"center" }}
+              sx={{height:{xs:"auto",md:"100%"},paddingLeft:{xs:"0px",md:"16px"}}}
             />
           </Grid>
           <Grid item xs={12} md={6} sx={{ height: "100%" }}>
             <CardContent
               sx={{
-                height: "400px",
+                height: "auto",
                 display: "flex",
                 alignItems: "flex-start",
                 justifyContent: "revert",

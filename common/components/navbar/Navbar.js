@@ -186,6 +186,7 @@ function Navbar({ bgcolor }) {
                   width: "100%",
                   marginLeft: "10px",
                   cursor: "pointer",
+                  marginTop:"-5px"
                 }}
                 onClick={() => {
                   router.push("/");
