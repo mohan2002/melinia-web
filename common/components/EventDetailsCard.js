@@ -114,7 +114,7 @@ function EventDetailsCard({data}) {
                   color="#6E798C"
                   sx={{ color: "#6A6A6A",fontSize:{xs:"24px",md:"32px"}}}
                 />
-                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>+91 9842258390</Typography>
+                <Typography color="#6E798C" sx={{fontSize:{xs:"14px",md:"16px"}}}>{data.contactno}</Typography>
               </Grid>
               <Grid
                 item

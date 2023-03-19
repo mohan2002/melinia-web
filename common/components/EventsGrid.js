@@ -166,7 +166,6 @@ function EventsGrid() {
                 md={4}
                 data-aos="fade-right"
                 data-aos-delay="120"
-                sx={{ display: { xs: cond ? "block" : "none", md: "block" } }}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -180,7 +179,6 @@ function EventsGrid() {
                 md={4}
                 data-aos="fade-right"
                 data-aos-delay="120"
-                sx={{ display: { xs: cond ? "block" : "none", md: "block" } }}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"

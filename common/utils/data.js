@@ -10,7 +10,7 @@ const technicaldata = {
       "Being one of the flagship events of Melinia, Coolest melinial aims to enhance participants' confidence, critical thinking, and communication skills. It has three rounds, including a set of aptitude questions in the first round, a group discussion in the second round, and an interview process in the third round to assess the participants' ability to deal with stress, think logically, and think quickly.",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "89396 38419",
     deadlinereg: "On Spot Event",
     rounds: [
       {
@@ -46,7 +46,7 @@ const technicaldata = {
       "Join us on a quest for the Iron Throne of coding mastery in the epic battle of Game of Codes! Inspired by the Game of Thrones series, this thrilling event challenges you to unleash your coding skills and solve fun and challenging problems in a new esoteric language. Embark on a thrilling journey of experiencing a new esoteric language, and solving fun and challenging coding problems. Aims to bring out the logical, interpretational, and programming skills in the participants. Don't miss out on the opportunity to become the champion of Game of Codes and claim the Iron Throne of coding mastery!",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "98429 62727",
     deadlinereg: "On Spot Event",
     rounds: [
       {
@@ -85,7 +85,7 @@ const technicaldata = {
       "Welcome to the Land of the Dead, where creativity meets innovation in the magical world of UI/UX Designing! Inspired by the Disney Pixar's hit movie Coco, this event challenges participants to instantly develop an innovative design for a given product using tools like Figma and Adobe XD. Participants are expected to instantaneously develop an innovative design for a given product and familiarize themselves with the tools. Showcase your design skills and knowledge of UI/UX principles. Don't miss out on this opportunity to enter the colorful world of UI/UX design and become a part of the legacy of Coco!",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "9842258390",
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
@@ -115,7 +115,7 @@ const technicaldata = {
       "Welcome, wizards! Are you ready to embark on a thrilling Harry Potter-themed adventure that will test your physical and coding skills? The Wizarding Code Hunt is the event for you! Gather a team of 3-4 participants and get ready to complete four rounds of challenges over a three-hour duration. The team that completes the hunt list and finds the treasure in the shortest amount of time wins the competition. Don't forget to use your alohomora skills to unlock the clues along the way! Join us for an exciting and magical experience, where you'll encounter enchanted objects, spells, and magical creatures. Expecto patronum!",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "77086 61963",
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
@@ -135,7 +135,7 @@ const technicaldata = {
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   innovationodyssey: {
-    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FInnovation-Odyssey.png?alt=media&token=d5fe3810-33b9-4e25-af36-11c6b597f72b",
+    img: "https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/innov.png?alt=media&token=2a962dbe-3d70-4606-a276-17d3504bd260",
     eventname: "INNOVATION ODYSSEY",
     date: "Apr 5, 2023",
     time: "11.30 – 1.00 pm (R1) & 3.00-4.00 pm (R2)",
@@ -145,7 +145,7 @@ const technicaldata = {
       "Embark on an exciting journey of innovation and creativity with 'Innovation Odyssey', an event inspired by the movie 'The Big Short'. The event offers a platform for participants to showcase their problem-solving and ideation skills. It is a perfect opportunity for all those who love to challenge themselves and push their limits. Participants get to work in a time crunch that encourages focused innovations and stimulates problem-solving skills. Join us for an unforgettable experience that will test your creativity, critical thinking, and communication skills. Are you ready to embark on this innovation odyssey?",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "8870539376",
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
@@ -182,7 +182,7 @@ const technicaldata = {
       "Are you ready to unlock the full potential of your Sharingan and take your data analytics skills to the next level? Then join us for 'Tell-A-Tale,' an epic event that will transport you into the world of Naruto and challenge you to unleash your inner shinobi. Join us for an epic event where you'll learn to design a dashboard, decipher data, and uncover hidden insights that will rival even the most powerful jutsu. Level up your data game and present like a shinobi leader. Get ready to slay with your data and weave a tale that will be passed down through the generations!",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "6369518026",
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
@@ -223,7 +223,7 @@ const nontechnicaldata = {
       "Get ready to flex your IT skills and compete like a pro! Triathlon is the ultimate event for those looking to level up their typing speed and pitching abilities through fun quizzes and challenges. Don't miss out on the chance to show your peers what you're made of - register now for Triathlon",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "94426 28986",
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
@@ -252,7 +252,7 @@ const nontechnicaldata = {
     isResourceprovided: true,
     no_participants: "2 per team",
     noprizes: 2,
-    prizeamount: ["₹2500", "₹1500"],
+    prizeamount: [2500, 1500],
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
   "221bpuzzlehunt": {
@@ -266,7 +266,7 @@ const nontechnicaldata = {
       "Hey, all you detectives out there! Are you prepared to take on an exciting expedition of unraveling hints, deciphering enigmas, and solving mysteries, just like the great Sherlock Holmes? If that's the case, then this event has been created just for you. We're excited to offer you the chance to refine your investigative abilities by participating in two rounds of challenges. Don't let this opportunity to demonstrate your logical reasoning and deduction skills pass you by. Sign up now to join the event and put your mental prowess to the ultimate test!        ",
     location: "Declaring Soon",
     registrationamt: "₹250 for Technical and Non Technical events",
-    contactno: "",
+    contactno: "98940 87889",
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
@@ -291,7 +291,7 @@ const nontechnicaldata = {
     isResourceprovided: true,
     no_participants: "Individual",
     noprizes: 2,
-    prizeamount: ["₹2500", "₹1500"],
+    prizeamount: [2500, 1500],
     eventlink: "https://forms.gle/5osGmAfwb21eQAxt6",
   },
 };
@@ -306,7 +306,7 @@ const hackathon = {
     "Being one of the flagship events of Melinia, Hackathon aims to bring out the brainstorming skills and team’s coordination in the participants. The outcomes expected are viable and feasible product prototypes that will enhance the lifestyles of students, professors and improve the working standard of institutions in general.",
   location: "Declaring soon",
   registrationamt: "₹300 per team",
-  contactno: "",
+  contactno: "75300 33008",
   deadlinereg: "25th March, 2023",
   rounds: [
     {
@@ -330,7 +330,7 @@ const hackathon = {
   isResourceprovided: false,
   no_participants: "2-3 per Team",
   noprizes: 3,
-  prizeamount: ["₹6000", "₹4000", "₹2000"],
+  prizeamount: [6000,4000,2000],
   eventlink: "https://unstop.com/hackathons/hackathon-2k23-melinia-2k23-coimbatore-institute-of-technology-cit-coimbatore-646397",
 };
 const workshop = {
@@ -344,7 +344,7 @@ const workshop = {
     "Are you an aspiring entrepreneur looking to learn from a successful founder? Join Prashanth Ganesh, founder of PreSkale, and our alumni, for 'Revive the Entrepreneur in You', a one-day workshop that will provide you with the tools and resources to launch and grow your own business.During this event, he will guide you through key topics such as ideation, problem-solving, business planning, financial management, and growth strategies. You'll also have the opportunity to hear firsthand from him about his journey from idea to reality with PreSkale. Whether you're just getting started or looking to take your business to the next level, this workshop will provide you with the inspiration, knowledge, and network you need to succeed. Don't miss out on this exciting opportunity to revive the entrepreneur in you!",
   location: "Declaring soon",
   registrationamt: "₹150 per Individual",
-  contactno: "",
+  contactno: " 95669 77941",
   deadlinereg: "17th - 24th March, 2023",
   rounds: [
     {

@@ -33,7 +33,7 @@ function Developer2() {
     },
   ];
   return (
-    <Box sx={{ marginTop: "80px", marginBottom: "100px" }}>
+    <Box sx={{ marginTop: {xs:"0px",md:"80px"}, marginBottom: "100px" }}>
       <Card sx={{ height: { xs: "auto", md: "420px" } }} elevation="none">
         <Grid container spacing={2} >
           <Grid item xs={12} md={6} sx={{ order: { xs: 2, md: 1 } }}>
@@ -44,6 +44,7 @@ function Developer2() {
                 alignItems: { xs: "center", md: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
+                mt:{xs:"20px",md:"0px"}
               }}
             >
               <Typography

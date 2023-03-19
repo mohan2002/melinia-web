@@ -12,6 +12,10 @@ function Sponsors() {
       name: "Root Quotient",
       logo: "https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png",
     },
+    {
+      name: "KLA",
+      logo: "/images/klar.png",
+    },
   ];
   return (
     <Box
@@ -38,7 +42,7 @@ function Sponsors() {
           sx={{ fontSize: { xs: "22px", md: "32px" } }}
           mb={2}
         >
-          SPONSORS
+          SPONSORS & CO-SPONSORS
         </Typography>
         <Typography mb={4} variant="body2" component="p" color="#6A6A6A">
           We've had the pleasure to collaborate with a few...
@@ -60,7 +64,8 @@ function Sponsors() {
                   src={sponsor.logo}
                   alt={sponsor.name}
                   width="100%"
-                  height="50"
+                  height="80"
+                  style={{objectFit:"contain"}}
                 />
               </Box>
             </Grid>

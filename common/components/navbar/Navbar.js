@@ -87,7 +87,7 @@ const pages = [
     ],
   },
   {
-    endpoint: "Committe",
+    endpoint: "Committee",
     endpointUrl: "/committee",
   },
   {
@@ -181,7 +181,7 @@ function Navbar({ bgcolor }) {
               mt={1}
             >
               <img
-                src="/images/melenialogo.png"
+                src="/images/log.png"
                 style={{
                   width: "100%",
                   marginLeft: "10px",

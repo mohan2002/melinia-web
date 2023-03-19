@@ -38,7 +38,7 @@ function Event() {
     <Box>
       <Box height="100vh">
         <Navbar bgcolor="#ED213A"/>
-        <EventBanner data={data} type="Technical Event"/>
+        <EventBanner data={data} type="Flagship Technical Event"/>
       </Box>
       <EventDetailsCard data={data}/>
       <EventRule data={data}/>

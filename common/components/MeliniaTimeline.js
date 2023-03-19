@@ -40,10 +40,10 @@ export default function MeliniaTimeline() {
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
+            <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
               Inaugration ceremony
             </Typography>
-            <Typography>Melinia Day starts</Typography>
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>Melinia Day starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -62,10 +62,10 @@ export default function MeliniaTimeline() {
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Workshop / Game of codes / Triathlon
+            <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
+              <a href="/events/workshop" style={{color:"black",textDecoration:"none"}}>Workshop</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/gameofcodes">Game of codes</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/nontechnical/triathlon">Triathlon</a>
             </Typography>
-            <Typography>A Technical and Non Technical event starts</Typography>
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}> A Technical and Non Technical event starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -84,10 +84,10 @@ export default function MeliniaTimeline() {
             <TimelineConnector sx={{height:"20px"}}/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Innovation Odyssey / Coolest melinial / Tell-A-Tale
+            <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
+             <a href="/events/innovationodyssey" style={{color:"black",textDecoration:"none"}}>Innovation Odyssey</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/coolestmelinial">Coolest melinial</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/tellatale">Tell-A-Tale</a>
             </Typography>
-            <Typography>A Technical and Non Technical event starts</Typography>
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>A Technical and Non Technical event starts</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -109,7 +109,7 @@ export default function MeliniaTimeline() {
             <Typography variant="h6" component="span">
               Lunch Break
             </Typography>
-            <Typography>Students can take up their Lunch.</Typography>
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>Students can take up their Lunch.</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -128,10 +128,11 @@ export default function MeliniaTimeline() {
             <TimelineConnector/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              UI/UX / Wizarding Code Hunt
+            <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
+             <a href="/events/technical/uiunleashed" style={{color:"black",textDecoration:"none"}}>UX Unleashed</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/hogwartscodequest">Howgarts Code Quest</a>
             </Typography>
-            <Typography>A Non Technical Event that is fun and yet more interesting</Typography>
+            
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>A Second set of Technical and Non Technical events.</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -150,10 +151,10 @@ export default function MeliniaTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              The 221b Puzzle Hunt / Tell-A-Tale (Round 2) / Coolest melinial (Round 2)
+            <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
+             <a href="/events/nontechnical/221bpuzzlehunt" style={{color:"black",textDecoration:"none"}}>The 221b Puzzle Hunt</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/tellatale">Tell-A-Tale (R2)</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/coolestmelinial">Coolest melinial (R2)</a>
             </Typography>
-            <Typography>A Non Technical Event that is fun and yet more interesting</Typography>
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>A Second set of Technical and Non Technical events.</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -165,10 +166,10 @@ export default function MeliniaTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
+            <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
               End of the day. Valediction program.
             </Typography>
-            <Typography>Melinia Day ends with Prize distribution at Auditorium!</Typography>
+            <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>Melinia Day ends with Prize distribution at Auditorium!</Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
