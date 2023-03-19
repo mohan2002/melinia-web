@@ -16,6 +16,7 @@
     "@mui/lab": "^5.0.0-alpha.123",
     "@mui/material": "^5.11.12",
     "@mui/styled-engine-sc": "^5.11.11",
+    "@vercel/analytics": "^0.1.11",
     "aos": "^2.3.4",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.4",
