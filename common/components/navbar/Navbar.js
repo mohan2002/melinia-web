@@ -92,7 +92,7 @@ const pages = [
   },
   {
     endpoint: "College Tour",
-    endpointUrl:"/collegetour"
+    endpointUrl:"https://citvirtualtour.onrender.com/index"
   },
 ];
 
