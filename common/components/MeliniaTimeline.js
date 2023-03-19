@@ -17,6 +17,7 @@ import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
+import Link from "next/link";
 
 export default function MeliniaTimeline() {
   return (
@@ -63,7 +64,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
-              <a href="/events/workshop" style={{color:"black",textDecoration:"none"}}>Workshop</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/gameofcodes">Game of codes</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/nontechnical/triathlon">Triathlon</a>
+              <Link href="/events/workshop" style={{color:"black",textDecoration:"none"}}>Workshop</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/technical/gameofcodes">Game of codes</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/nontechnical/triathlon">Triathlon</Link>
             </Typography>
             <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}> A Technical and Non Technical event starts</Typography>
           </TimelineContent>
@@ -85,7 +86,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
-             <a href="/events/innovationodyssey" style={{color:"black",textDecoration:"none"}}>Innovation Odyssey</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/coolestmelinial">Coolest melinial</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/tellatale">Tell-A-Tale</a>
+             <Link href="/events/innovationodyssey" style={{color:"black",textDecoration:"none"}}>Innovation Odyssey</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/technical/coolestmelinial">Coolest melinial</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/technical/tellatale">Tell-A-Tale</Link>
             </Typography>
             <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>A Technical and Non Technical event starts</Typography>
           </TimelineContent>
@@ -129,7 +130,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
-             <a href="/events/technical/uiunleashed" style={{color:"black",textDecoration:"none"}}>UX Unleashed</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/hogwartscodequest">Howgarts Code Quest</a>
+             <Link href="/events/technical/uiunleashed" style={{color:"black",textDecoration:"none"}}>UX Unleashed</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/technical/hogwartscodequest">Howgarts Code Quest</Link>
             </Typography>
             
             <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>A Second set of Technical and Non Technical events.</Typography>
@@ -152,7 +153,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
-             <a href="/events/nontechnical/221bpuzzlehunt" style={{color:"black",textDecoration:"none"}}>The 221b Puzzle Hunt</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/tellatale">Tell-A-Tale (R2)</a> / <a style={{color:"black",textDecoration:"none"}} href="/events/technical/coolestmelinial">Coolest melinial (R2)</a>
+             <Link href="/events/nontechnical/221bpuzzlehunt" style={{color:"black",textDecoration:"none"}}>The 221b Puzzle Hunt</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/technical/tellatale">Tell-A-Tale (R2)</Link> / <Link style={{color:"black",textDecoration:"none"}} href="/events/technical/coolestmelinial">Coolest melinial (R2)</Link>
             </Typography>
             <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>A Second set of Technical and Non Technical events.</Typography>
           </TimelineContent>

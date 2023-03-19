@@ -5,7 +5,6 @@ import Navbar from "@/common/components/navbar/Navbar";
 import ParticleComponent from "@/common/components/ParticleComponent";
 import { CircularProgress, makeStyles } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import Loader from "react-loading-indicators";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -26,7 +25,6 @@ import BottomFooter from "@/common/components/BottomFooter";
 import ChiefGuest from "@/common/components/ChiefGuest";
 import Countdown from "@/common/components/Countdown";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
