@@ -30,7 +30,6 @@ const DrawerNav = ({ open, setOpen, pages }) => {
           {pages.map((page) => (
             <div key={page.endpoint}>
               <ListItem
-                button
                 onClick={() => {
                   if (page.endpoint === 'Events') {
                     handleEventsToggle();
@@ -43,7 +42,9 @@ const DrawerNav = ({ open, setOpen, pages }) => {
                 }}
                 sx={{ py: 2 }}
               >
-                <ListItemText primary={<Typography variant="body1">{page.endpoint}</Typography>} />
+                <ListItemText primary={<Typography variant="body1">{page.endpoint}
+                {page.flagship && <span style={{position:"absolute",fontSize:"8px",right:40,top:0,color:"#ED213A"}}>Flagship</span>}
+                </Typography>} />
                 {page.endpoint === 'Events' && <ExpandMoreIcon sx={{ mr: 1 }} />}
               </ListItem>
               {page.endpoint === 'Events' && showEvents && (
@@ -75,7 +76,11 @@ const DrawerNav = ({ open, setOpen, pages }) => {
                                   router.push(subEndpoint.endpoint);
                                 }}
                               >
-                                <ListItemText primary={subEndpoint.name} />
+                                <ListItemText>
+                                  <Typography>{subEndpoint.name} 
+                                    {subEndpoint.flagship && <span style={{position:"absolute",fontSize:"8px",right:60,top:0,color:"#ED213A"}}>Flagship</span>}
+                                  </Typography>
+                                </ListItemText>
                               </ListItem>
                             ))}
                           </List>
@@ -84,16 +89,17 @@ const DrawerNav = ({ open, setOpen, pages }) => {
                       ) : (
                         <ListItem
                           key={dropdownPage.endpoint}
-                          button
                           sx={{ py: 1, pl: 2 }}
                           onClick={() => {
                             handleDrawerClose();
                             router.push(dropdownPage.endpointUrl);
                           }}
                         >
-                          <ListItemText
-                            primary={<Typography variant="body1">{dropdownPage.endpoint}</Typography>}
-                          />
+                          <ListItemText>
+                            <Typography variant="body1">{dropdownPage.endpoint}
+                                {dropdownPage.flagship && <span style={{position:"absolute",fontSize:"8px",right:120,top:6,color:"#ED213A"}}>Flagship</span>}
+                            </Typography>
+                          </ListItemText>
                           <Divider />
                         </ListItem>
                       )

@@ -14,7 +14,7 @@ function ChiefGuest() {
         }}
       >
         <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h4" fontWeight="700" mb={1} textAlign="center">
+          <Typography variant="h4" component="h1" fontWeight="700" sx={{ fontSize: { xs: "22px", md: "32px" }}} mb={1} textAlign="center">
             MEET OUR CHIEF GUEST
           </Typography>
           <Typography mb={4} color="#6A6A6A" textAlign="center">

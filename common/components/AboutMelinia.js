@@ -34,7 +34,7 @@ const AboutMelinia = ({ title, description, imageUrl }) => {
                 flexDirection: "column",
               }}
             >
-              <Typography variant="h4" component="h1" fontWeight="700">
+              <Typography variant="h4" component="h1" fontWeight="700" sx={{ fontSize: { xs: "22px", md: "32px" }}}>
                 ABOUT MELINIA
               </Typography>
               <Typography
@@ -43,6 +43,7 @@ const AboutMelinia = ({ title, description, imageUrl }) => {
                 mt={3}
                 letterSpacing={0.6}
                 lineHeight={1.8}
+                color="#6A6A6A"
               >
                 The Computing Departments prestigious national level
                 inter-college technical symposium, Melinia, is launching its 3rd

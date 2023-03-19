@@ -3,12 +3,13 @@ import Cover from "@/common/components/Banner";
 import Banner from "@/common/components/Banner";
 import Navbar from "@/common/components/navbar/Navbar";
 import ParticleComponent from "@/common/components/ParticleComponent";
-import { CircularProgress, makeStyles } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import Loader from "react-loading-indicators";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // ..
 import dynamic from 'next/dynamic';
 import AOS from 'aos'
@@ -75,6 +76,7 @@ export default function Home() {
       <ConnectUs/>
       <BottomFooter/>
     </div>
+    <ToastContainer/>
     </>
   );
 }

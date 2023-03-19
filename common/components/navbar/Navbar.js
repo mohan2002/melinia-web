@@ -14,6 +14,7 @@ import DrawerNav from "./DrawerNav";
 import { List, ListItem } from "@mui/material";
 // import Logo from "../../../assets/images/melinialogo.png"
 import { useRouter } from "next/navigation";
+import { Superscript } from "@mui/icons-material";
 
 const pages = [
   {
@@ -29,26 +30,32 @@ const pages = [
           {
             name: "UX Unleashed",
             endpoint: "/events/technical/uiunleashed",
+            flagship:false
           },
           {
             name: "Coolest Melinial",
             endpoint: "/events/technical/coolestmelinial",
+            flagship:true
           },
           {
             name: "Game of Codes",
             endpoint: "/events/technical/gameofcodes",
+            flagship:false
           },
           {
             name:"Hogwarts Code Quest",
             endpoint: "/events/technical/hogwartscodequest",
+            flagship:false
           },
           {
             name: "Innovation Odyssey",
             endpoint: "/events/technical/innovationodyssey",
+            flagship:false
           },
           {
             name: "Tell-a-Tale",
             endpoint: "/events/technical/tellatale",
+            flagship:false
           }
         ],
       },
@@ -58,20 +65,24 @@ const pages = [
           {
             name: "Triathlon",
             endpoint: "/events/nontechnical/triathlon",
+            flagship:false
           },
           {
             name: "The 221B Puzzle Hunt",
             endpoint: "/events/nontechnical/221bpuzzlehunt",
+            flagship:false
           },
         ],
       },
       {
         endpoint: "Hackathon",
         endpointUrl: "/events/hackathon",
+        flagship:true
       },
       {
         endpoint: "Workshop",
         endpointUrl: "/events/workshop",
+        flagship:false
       },
     ],
   },
@@ -259,6 +270,7 @@ function Navbar({ bgcolor }) {
                       >
                         <Typography textAlign="center">
                           {drop.endpoint}
+                          {drop.flagship && <span style={{position:"absolute",fontSize:"8px",right:40,top:0,color:"#ED213A"}}>Flagship</span>}
                         </Typography>
                       </MenuItem>
                       {drop.subEndpoints && (
@@ -299,7 +311,9 @@ function Navbar({ bgcolor }) {
                                 handleCloseSubmenu;
                               }}
                             >
-                              <Typography>{subEndpoint.name}</Typography>
+                              <Typography>{subEndpoint.name}
+                              </Typography>
+                              {subEndpoint.flagship && <span style={{position:"absolute",fontSize:"8px",right:40,top:0,color:"#ED213A"}}>Flagship</span>}
                             </MenuItem>
                           ))}
                         </Menu>
