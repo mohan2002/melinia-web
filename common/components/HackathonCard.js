@@ -75,14 +75,15 @@ const HackathonCard = ({ title, description, imageUrl }) => {
               </CardContent>
             </Grid>
           
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} p={2}>
               <CardMedia
                 component="img"
                 image="https://firebasestorage.googleapis.com/v0/b/melinia2k23.appspot.com/o/Final%20Event%20Images%2FHackathon.jpg?alt=media&token=81a336a2-af2b-4999-940d-00ce29662308"
                 alt={title}
                 width="100%"
-                style={{ objectFit: "cover",objectPosition:{xs:"center",md:"left"} }}
+                style={{ objectFit: "contain",objectPosition:{xs:"center",md:"left"} }}
                 sx={{height:{xs:"300px",md:"100%"}}}
+
               />
             </Grid>
           
