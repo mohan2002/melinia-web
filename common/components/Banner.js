@@ -36,17 +36,29 @@ function Banner() {
 
       <Typography
         sx={{
-          fontSize: { xs: "10px", md: "16px" },
+          fontSize: { xs: "10px", md: "14px" },
           color: "white",
           fontWeight: "300",
           marginTop:"10px",
-          textAlign:"center"
+          textAlign:"center",
         }}
       >
-        Proudly organized and presented by Department of Computing MSc SS, DS,
-        DCS, AIML.
+        Proudly organized and presented by 
+        
       </Typography>
-      <Box sx={{height:{xs:"60px",md:"100px"}}}>
+      <Typography
+        sx={{
+          fontSize: { xs: "10px", md: "14px" },
+          color: "white",
+          fontWeight: "300",
+          marginTop:"10px",
+          textAlign:"center",
+          width:{xs:"auto",md:"50%"}
+        }}
+      >
+        Department of Computing (MSc Software Systems, Data Science, Decision and Computing Sciences, Artificial Intelligence and Machine Learning)
+      </Typography>
+      <Box sx={{height:{xs:"60px",md:"110px"}}}>
       <img src="/images/citlogo.png" alt="logo" style={{height:"100%",marginTop:"10px"}}/>
 
       </Box>

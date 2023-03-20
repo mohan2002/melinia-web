@@ -62,6 +62,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                 THE ENTREPRENEURIAL MINDSET
               </Typography>
               <Typography
+                textAlign="justify"
                 variant="body2"
                 component="p"
                 mt={3}
@@ -88,7 +89,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                             </Typography>
                           </Box>
                     <Box display="flex" alignItems="center" >
-                        <Button href="/events/workshop" sx={{width: { xs: "120px", md: "200px" },background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>APPLY NOW<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
+                        <Button href="/events/workshop" sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>REGISTER HERE<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
                     </Box>
                   </Box>
             </CardContent>

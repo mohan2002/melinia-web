@@ -29,10 +29,14 @@ function EventBanner({data,type}) {
           </Box>
           <Box  width={{xs:"auto",md:"50%"}}>
             <Typography
-              sx={{ textIndent: {xs:"0px",md:"80px"},fontSize:{xs:"13px",md:"16px"},marginTop:{xs:"10px",md:"0px"} }}
+              sx={{ textIndent: {xs:"0px",md:"80px"},fontSize:{xs:"12px",md:"14px"},marginTop:{xs:"10px",md:"0px"} }}
               lineHeight={1.6}
               letterSpacing={1.1}
               color="#6A6A6A"
+              variant="body2"
+              component="p"
+              mt={3}
+              textAlign="justify"
             >
               {data.description}
             </Typography>

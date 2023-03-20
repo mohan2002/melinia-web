@@ -30,7 +30,7 @@ export default function EventCard({event,url}) {
             </Box>
             <Box>
                 <Typography variant="h5" fontWeight="700" mb={0.5} fontSize="20px">{event.eventname}</Typography>
-                <Typography variant="p" color="#6A6A6A" letterSpacing={0.5} lineHeight={1.3}>{shortcontent}<span>...</span></Typography>
+                <Typography textAlign="justify" variant="p" color="#6A6A6A" letterSpacing={0.5} lineHeight={1.3}>{shortcontent}<span>...</span></Typography>
             </Box>
           </Box>
         </CardContent>

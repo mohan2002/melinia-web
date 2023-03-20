@@ -155,7 +155,7 @@ function EventDetailsCard({data}) {
             </Grid>
           </Box>
           <Box width="100%" height="15%" display="flex" alignItems="flex-start" justifyContent="flex-end" pr={2}>
-            <Button href={data.eventlink}>Apply Event
+            <Button href={data.eventlink}>Register here
                 <ArrowForwardIcon  sx={{fontSize:"18px",marginLeft:"2px"}}/>
             </Button>
           </Box>

@@ -17,7 +17,7 @@ const styles = {
   },
   image: {
     width: '100%',
-    height:"250px",
+    height:"280px",
     objectFit:"cover",
     borderTopLeftRadius: "6px",
     borderTopRightRadius: "6px",

@@ -11,10 +11,11 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import DrawerNav from "./DrawerNav";
-import { List, ListItem } from "@mui/material";
+import { List, ListItem, Tooltip } from "@mui/material";
 // import Logo from "../../../assets/images/melinialogo.png"
 import { useRouter } from "next/navigation";
 import { Superscript } from "@mui/icons-material";
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 
 const pages = [
   {
@@ -87,7 +88,7 @@ const pages = [
     ],
   },
   {
-    endpoint: "Committee",
+    endpoint: "Melinia Team",
     endpointUrl: "/committee",
   },
   {
@@ -332,7 +333,7 @@ function Navbar({ bgcolor }) {
                   }}
                   sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
-                  Committee
+                  Melinia Team
                 </Button>
               </Box>
               <Box>
@@ -345,6 +346,14 @@ function Navbar({ bgcolor }) {
               >
                 College Tour
               </Button>
+              
+              </Box>
+              <Box display="flex" alignItems="center" justifyContent="center">
+                <Tooltip title="Download App">
+                <IconButton href="https://drive.google.com/file/d/1kDIHdU-osG8QuWXb8Y2lX1uD0AIBnAyt/view?usp=drivesdk" target="_blank">
+                  <PhoneIphoneIcon sx={{color:"white",fontSize:"30px"}}/>
+                </IconButton>
+                </Tooltip>
               </Box>
             </Box>
           </Box>

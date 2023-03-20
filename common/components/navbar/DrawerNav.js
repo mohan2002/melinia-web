@@ -10,6 +10,8 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useRouter } from 'next/router';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+
 
 const DrawerNav = ({ open, setOpen, pages }) => {
   const [showEvents, setShowEvents] = useState(false);
@@ -110,6 +112,14 @@ const DrawerNav = ({ open, setOpen, pages }) => {
               <Divider />
             </div>
           ))}
+          <ListItem sx={{py:2}} onClick={() => {router.push("https://drive.google.com/file/d/1kDIHdU-osG8QuWXb8Y2lX1uD0AIBnAyt/view?usp=drivesdk")}}>
+            <ListItemText>
+              <Box sx={{display:"flex",flexDirection:"row",alignItems:"center"}}>
+                <Typography>Download App</Typography>
+                <PhoneIphoneIcon sx={{color:"#6E798C",fontSize:"20px"}}/>
+              </Box>
+            </ListItemText>
+          </ListItem>
         </List>
       </Box>
     </Drawer>

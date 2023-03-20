@@ -42,7 +42,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
-              Inaugration ceremony
+              Inauguration ceremony
             </Typography>
             <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>Melinia Day starts</Typography>
           </TimelineContent>
@@ -168,7 +168,7 @@ export default function MeliniaTimeline() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span" sx={{ fontSize: { xs: "14px", md: "22px" }}}>
-              End of the day. Valediction program.
+              Valediction
             </Typography>
             <Typography sx={{ fontSize: { xs: "12px", md: "16px" }}}>Melinia Day ends with Prize distribution at Auditorium!</Typography>
           </TimelineContent>

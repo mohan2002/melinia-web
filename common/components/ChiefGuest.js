@@ -26,7 +26,7 @@ function ChiefGuest() {
           <Typography mt={4} variant="h6" fontWeight="700">Mr. Swaminathan Ganesan</Typography>
           <Typography variant="subtitle2">Co-Founder and CEO of SMARTAIL</Typography>
 
-          <Typography color="#6E798C" textAlign="center" sx={{width:{sm:"80%",md:"70%"}}} mt={2}>Mr. Ganesan will be joining us as the Chief Guest for our National Level Technical Symposium Melinia 2k23 . He has been instrumental in revolutionizing the education industry through the integration of cutting-edge technology. His expertise and knowledge in the field of AI and DT have been widely recognized, and we are honored to have him grace our event as the Chief Guest.</Typography>
+          <Typography color="#6E798C" textAlign="center" sx={{width:{sm:"80%",md:"70%"}}} mt={2}>Mr. Ganesan will be joining us as Chief Guest for our National Level Technical Symposium Melinia 2k23 . He has been instrumental in revolutionizing the education industry through the integration of cutting-edge technology. His expertise and knowledge in the field of AI and DT have been widely recognized, and we are honored to have him to grace our event as Chief Guest.</Typography>
         </Box>
       </Container>
     </Box>

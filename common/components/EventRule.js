@@ -43,7 +43,7 @@ function EventRule({ data }) {
                   {
                     item.rules.map((point,index) => (
                       <ListItem key={index}>
-                        <Typography  color="#6E798C">{index+1}{"."} {point}</Typography>
+                        <Typography  color="#6E798C" sx={{fontSize:{xs:"12px",md:"14px"}}}>{index+1}{"."} {point}</Typography>
                       </ListItem>
                     ))
                   }
