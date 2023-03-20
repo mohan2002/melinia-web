@@ -225,7 +225,7 @@ function Navbar({ bgcolor }) {
               </Box>
               <Box onMouseLeave={handleCloseDropdown}>
                 <Button
-                  onMouseEnter={handleOpenDropdown}
+                  onClick={handleOpenDropdown}
                   sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
                   Events
@@ -350,7 +350,7 @@ function Navbar({ bgcolor }) {
               </Box>
               <Box display="flex" alignItems="center" justifyContent="center">
                 <Tooltip title="Download App">
-                <IconButton href="https://drive.google.com/file/d/1kDIHdU-osG8QuWXb8Y2lX1uD0AIBnAyt/view?usp=drivesdk" target="_blank">
+                <IconButton href="https://drive.google.com/file/d/1KXLBCiaU7G3xiI6bDgudlpC5Yz1eUgTS/view?usp=sharing" target="_blank">
                   <PhoneIphoneIcon sx={{color:"white",fontSize:"30px"}}/>
                 </IconButton>
                 </Tooltip>

@@ -347,7 +347,7 @@ const workshop = {
   img: "/images/Workshop.png",
   eventname: "WORKSHOP",
   date: "1st April",
-  time: "10.00 - 11.30 PM",
+  time: "10.00 - 11.30 AM",
   shortdescription:
     "Being one of the flagship events of Melinia, Hackathon aims to bring out the brainstorming skills and team’s coordination in the participants. The outcomes expected are viable and feasible product prototypes that will enhance the lifestyles of students, professors and improve the working standard of institutions in general.",
   description:
