@@ -15,7 +15,7 @@ function Developer1() {
   ];
   return (
     <Box sx={{ marginTop: "80px", marginBottom:"100px" }}>
-      <Card sx={{ height: { xs: "auto", md: "420px" } }} elevation="none">
+      <Card sx={{ height: { xs: "auto", md: "auto" } }} elevation="none">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <img
