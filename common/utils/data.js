@@ -90,8 +90,6 @@ const technicaldata = {
     eventname: "UX UNLEASHED",
     date: "Apr 5, 2023",
     time: "02.00PM - 03.15PM",
-    shortdescription:
-      "Waiting to show off your designing skills? Then (UI/UX event name) has a message for you... Hoyeee U AND I can make an Ultimate UI!!",
     description:
       "Welcome to the Land of the Dead, where creativity meets innovation in the magical world of UI/UX Designing! Inspired by the Disney Pixar's hit movie Coco, this event challenges participants to instantly develop an innovative design for a given product using tools like Figma and Adobe XD. Participants are expected to instantaneously develop an innovative design for a given product and familiarize themselves with the tools. Showcase your design skills and knowledge of UI/UX principles. Don't miss out on this opportunity to enter the colorful world of UI/UX design and become a part of the legacy of Coco!",
     location: "Declaring Soon",

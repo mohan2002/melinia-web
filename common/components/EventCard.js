@@ -8,7 +8,7 @@ import { Box } from '@mui/system';
 import { useRouter } from 'next/router';
 
 export default function EventCard({event,url}) {
-  const content = event.shortdescription
+  const content = event.description
   const shortcontent = content.slice(0,126)
   const router = useRouter()
   return (
