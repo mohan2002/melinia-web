@@ -88,7 +88,7 @@ const pages = [
     ],
   },
   {
-    endpoint: "Melinia Team",
+    endpoint: "Melinia Crew",
     endpointUrl: "/committee",
   },
   {
@@ -333,7 +333,7 @@ function Navbar({ bgcolor }) {
                   }}
                   sx={{ my: 2, color: "white", display: "block", mr: 4 }}
                 >
-                  Melinia Team
+                  Melinia Crew
                 </Button>
               </Box>
               <Box>

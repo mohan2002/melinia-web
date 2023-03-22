@@ -42,7 +42,7 @@ function Sponsors() {
           sx={{ fontSize: { xs: "22px", md: "30px" } }}
           mb={2}
         >
-          VALUABLE SPONSORS
+          PRIME SPONSORS
         </Typography>
         {/* <Typography mb={4} variant="body2" component="p" color="#6A6A6A">
           We've had the pleasure to collaborate with a few...
@@ -71,6 +71,24 @@ function Sponsors() {
             </Grid>
           ))}
         </Grid>
+        <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                p={1}
+                borderRadius={1}
+                bgcolor="background.paper"
+                width={{ xs: 120, md: 250 }}
+                mt={{xs:0,md:2}}
+              >
+                <img
+                  src="/images/klaupdated.png"
+                  alt="Kla"
+                  width="100%"
+                  height="65"
+                  style={{objectFit:"contain"}}
+                />
+              </Box>
       </Container>
     </Box>
   );

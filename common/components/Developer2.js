@@ -17,19 +17,19 @@ function Developer2() {
   const icons = [
     {
       icon: <LinkedInIcon sx={{ color: "#0077B5" }} />,
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/guna-r1505",
     },
     {
       icon: <EmailOutlinedIcon sx={{ color: "GrayText" }} />,
-      link: "mailto:example@example.com",
+      link: "mailto:1931009mss@cit.edu.in",
     },
     {
       icon: <PhoneCallbackIcon sx={{ color: "green" }} />,
-      link: "tel:+1234567890",
+      link: "tel:+91 75300 33008",
     },
     {
       icon: <InstagramIcon sx={{ color: "#833AB4" }} />,
-      link: "https://www.instagram.com/",
+      link: "https://www.instagram.com/gunaa.__",
     },
   ];
   return (

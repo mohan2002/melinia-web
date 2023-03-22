@@ -17,7 +17,7 @@ const styles = {
   },
   image: {
     width: '100%',
-    height:"280px",
+    height:"100%",
     objectFit:"cover",
     borderTopLeftRadius: "6px",
     borderTopRightRadius: "6px",
@@ -34,7 +34,9 @@ const styles = {
 function CommitteeProfileCard({img,name,position,designation,phone,mail}) {
   return (
     <Card style={styles.card}>
-      <img src={img} alt="Profile Picture" style={styles.image} />
+      <Box height={{xs:"auto",md:280}} width="100%">
+       <img src={img} alt="Profile Picture" style={styles.image} />
+      </Box>
       <CardContent style={styles.content}>
         <Typography gutterBottom variant="h6" fontWeight="700" className="name">
           {name}

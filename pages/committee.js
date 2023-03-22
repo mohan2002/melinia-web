@@ -10,11 +10,20 @@ function committee() {
     <Box>
       <Navbar bgcolor="#ED213A"/>
       <Container sx={{display:"flex",marginTop:"80px",xflexDirection:"column",flexWrap:"wrap",justifyContent:"space-between",gap:"30px",alignItems:"center"}}>
-        <Box width="100%" display="flex" alignItems="center" justifyContent="center" mb={4}>
+        {/* <Box width="100%" display="flex" alignItems="center" justifyContent="center" mb={4}>
           <Typography variant="h4" sx={{fontSize:{xs:"26px",md:"36px"}}} fontWeight="700">MELINIA TEAM</Typography>
-        </Box>
+        </Box> */}
         <Box width="100%" display="flex" alignItems="center" justifyContent="center">
-          <CommitteeProfileCard img="/images/stanleys.jpg" name="Dr.C.Stanly Felix" position="Faculty Advisor" designation="Department of Computing" phone=" 0422-2574071 Extn: 335" mail="stanlyfelix@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/stanleys.jpg" name="Dr.C.Stanly Felix" position="Faculty Advisor" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="stanlyfelix@cit.edu.in"/>
+        </Box>
+        <Box width="100%"  display="flex" flexDirection={{xs:"column",md:"row"}}  alignItems="center" justifyContent="space-around" gap={4}>
+          <CommitteeProfileCard img="/images/keerthikamam.jpeg" name="Dr.V.Keerthika" position="Event management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="vkeerthika@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/manjumam.jpeg" name="Dr.D.Manju" position="MC desk and Stage Arrangement" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="manju@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/sujithramam.jpeg" name="Dr.M.Sujithra" position="Technical Event Incharge" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="sujithra@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/hemashreemam.jpeg" name="Mrs.P Hemashree" position="Non-Technical Event Incharge" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="hemashree@cit.edu.in"/>
+        </Box>
+        <Box width="100%" display="flex" alignItems="center" justifyContent="center" my={3}>
+          <Typography variant="h4" sx={{fontSize:{xs:"24px",md:"30px"}}} fontWeight="700">OFFICE BEARERS</Typography>
         </Box>
         <Box width="100%"  display="flex" flexDirection={{xs:"column",md:"row"}}  alignItems="center" justifyContent="space-around" gap={4}>
           <CommitteeProfileCard img="/images/dd.jpeg" name="J Danesh Dheerthan" position="Chairman" designation="MSc Decision and Computing Sciences" phone="9842398623" mail="1933005mdcs@cit.edu.in"/>
