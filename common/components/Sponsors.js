@@ -5,13 +5,18 @@ import React from "react";
 function Sponsors() {
   const sponsors = [
     {
+      name: "Root Quotient",
+      logo:"/images/klaupdated.png"
+    },
+    {
       name: "Smartail",
       logo: "https://smartail.ai/wp-content/uploads/2021/09/Site-Identity-Logo-Smartail.svg",
     },
     {
-      name: "Root Quotient",
-      logo:"/images/klaupdated.png"
-    },
+      name:"KLA",
+      logo:"https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png"
+    }
+    
     // {
     //   name: "KLA",
     //   logo: "/images/klar.png",
@@ -48,9 +53,9 @@ function Sponsors() {
           We've had the pleasure to collaborate with a few...
         </Typography> */}
 
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={{xs:0,md:3}} justifyContent="center">
           {sponsors.map((sponsor) => (
-            <Grid item key={sponsor.name}>
+            <Grid item key={sponsor.name} xs={12} display="flex" alignItems="center" justifyContent="center">
               <Box
                 display="flex"
                 alignItems="center"
@@ -58,7 +63,7 @@ function Sponsors() {
                 p={1}
                 borderRadius={1}
                 bgcolor="background.paper"
-                width={{ xs: 150, md: 250 }}
+                width={{ xs: 170, md: 250 }}
               >
                 <img
                   src={sponsor.logo}
@@ -71,24 +76,7 @@ function Sponsors() {
             </Grid>
           ))}
         </Grid>
-        <Box
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                p={1}
-                borderRadius={1}
-                bgcolor="background.paper"
-                width={{ xs: 120, md: 250 }}
-                mt={{xs:0,md:2}}
-              >
-                <img
-                  src="https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png"
-                  alt="Kla"
-                  width="100%"
-                  height="50"
-                  style={{objectFit:"contain"}}
-                />
-              </Box>
+       
       </Container>
     </Box>
   );

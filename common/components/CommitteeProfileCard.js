@@ -41,7 +41,7 @@ function CommitteeProfileCard({img,name,position,designation,phone,mail}) {
         <Typography gutterBottom variant="h6" fontWeight="700" className="name">
           {name}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p" fontWeight="700" className="position">
+        <Typography variant="body2" color="textSecondary" component="p" fontWeight="700" className="position" fontSize="13px">
           {position}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p" mt={0.5} textAlign="center" className="designation">

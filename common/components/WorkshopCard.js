@@ -19,7 +19,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
           <Grid item xs={12} md={6}>
             <CardMedia
               component="img"
-              image="/images/workshop.jpeg"
+              image="/images/workshopupdated.png"
               alt={title}
               width="100%"
               style={{ objectFit: "contain",objectPosition:"center" }}
