@@ -10,7 +10,7 @@ function Sponsors() {
     },
     {
       name: "Root Quotient",
-      logo: "https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png",
+      logo:"/images/klaupdated.png"
     },
     // {
     //   name: "KLA",
@@ -82,10 +82,10 @@ function Sponsors() {
                 mt={{xs:0,md:2}}
               >
                 <img
-                  src="/images/klaupdated.png"
+                  src="https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png"
                   alt="Kla"
                   width="100%"
-                  height="65"
+                  height="50"
                   style={{objectFit:"contain"}}
                 />
               </Box>

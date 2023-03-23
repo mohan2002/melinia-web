@@ -17,8 +17,8 @@ function committee() {
           <CommitteeProfileCard img="/images/stanleys.jpg" name="Dr.C.Stanly Felix" position="Faculty Advisor" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="stanlyfelix@cit.edu.in"/>
         </Box>
         <Box width="100%"  display="flex" flexDirection={{xs:"column",md:"row"}}  alignItems="center" justifyContent="space-around" gap={4}>
-          <CommitteeProfileCard img="/images/keerthikamam.jpeg" name="Dr.V.Keerthika" position="Event management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="vkeerthika@cit.edu.in"/>
-          <CommitteeProfileCard img="/images/manjumam.jpeg" name="Dr.D.Manju" position="MC desk and Stage Arrangement" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="manju@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/keerthikamam.jpeg" name="Dr.V.Keerthika" position="Event Management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="vkeerthika@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/manjumam.jpeg" name="Dr.D.Manju" position="MC's desk and Event management " designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="manju@cit.edu.in"/>
           <CommitteeProfileCard img="/images/sujithramam.jpeg" name="Dr.M.Sujithra" position="Technical Event Incharge" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="sujithra@cit.edu.in"/>
           <CommitteeProfileCard img="/images/hemashreemam.jpeg" name="Mrs.P Hemashree" position="Non-Technical Event Incharge" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="hemashree@cit.edu.in"/>
         </Box>
