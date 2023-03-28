@@ -350,7 +350,7 @@ function Navbar({ bgcolor }) {
               </Box>
               <Box display="flex" alignItems="center" justifyContent="center">
                 <Tooltip title="Download App">
-                <IconButton href="https://drive.google.com/file/d/1KXLBCiaU7G3xiI6bDgudlpC5Yz1eUgTS/view?usp=sharing" target="_blank">
+                <IconButton href="https://drive.google.com/file/d/1WEdwnesvAZWA6cJhRl1MBFV4x9_SJpdr/view?usp=sharing" target="_blank">
                   <PhoneIphoneIcon sx={{color:"white",fontSize:"30px"}}/>
                 </IconButton>
                 </Tooltip>

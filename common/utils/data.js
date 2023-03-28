@@ -3,7 +3,7 @@ const technicaldata = {
     img: "/images/Coolest-Melinial.png",
     eventname: "COOLEST MELINIAL",
     date: "Apr 5, 2023",
-    time: "11.30 - 11.55 AM (R1) 12:00 - 01:00 PM (R2) & 02:30 - 04:30 PM (R3)",
+    time: "11.00 - 12.30 AM (R1) 02:30 - 04:30 PM (R2 & R2)",
     shortdescription:
       "Being one of the flagship events of Melinia, Coolest melinial aims to increase the confidence and bring out the critical thinking and communication skills in the participants.",
     description:
@@ -39,7 +39,7 @@ const technicaldata = {
         ],
       },
     ],
-    durationevent: "Round1(25mins) & Round2(30mins)",
+    durationevent: "Round1(25 mins) & Round2(60 mins) & Round3(50 mins)",
     isResourceprovided: true,
     no_participants: "Individual",
     noprizes: 2,
@@ -194,7 +194,7 @@ const technicaldata = {
     deadlinereg: "Prior / On Day registration",
     rounds: [
       {
-        title: "Data Demystified",
+        title: "Data Demystifier",
         rules: [
           "The first round will start at 12 p.m. and go on till 1 p.m.",
           "Participants will be given a dataset to analyze and will be asked to answer a set of questions .The insights that can be drawn from the dataset in order to answer the questions can be made by using any analytical tools of their interest.",

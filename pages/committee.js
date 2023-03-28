@@ -20,7 +20,7 @@ function committee() {
           <CommitteeProfileCard img="/images/keerthikamamupdated.jpg" name="Dr.V.Keerthika" position="Event Management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="vkeerthika@cit.edu.in"/>
           <CommitteeProfileCard img="/images/manjumam.jpeg" name="Dr.D.Manju" position="Event management " designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="manju@cit.edu.in"/>
           <CommitteeProfileCard img="/images/sujithramam.jpeg" name="Dr.M.Sujithra" position="Technical Event Management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="sujithra@cit.edu.in"/>
-          <CommitteeProfileCard img="/images/hemashreemam.jpeg" name="Mrs.P Hemashree" position="Non-Technical Event Management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="hemashree@cit.edu.in"/>
+          <CommitteeProfileCard img="/images/Hemashree.png" name="Mrs.P Hemashree" position="Non-Technical Event Management" designation="Department of Computing" phone="0422-2574071 Extn: 335" mail="hemashree@cit.edu.in"/>
         </Box>
         <Box width="100%" display="flex" alignItems="center" justifyContent="center" my={3}>
           <Typography variant="h4" sx={{fontSize:{xs:"24px",md:"30px"}}} fontWeight="700">OFFICE BEARERS</Typography>
