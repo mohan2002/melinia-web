@@ -25,6 +25,7 @@ import BottomFooter from "@/common/components/BottomFooter";
 import ChiefGuest from "@/common/components/ChiefGuest";
 import Countdown from "@/common/components/Countdown";
 import Head from "next/head";
+import OpenExpo from "@/common/components/OpenExpo";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -72,6 +73,7 @@ export default function Home() {
         <EventsGrid />
         <WorkshopCard />
         <HackathonCard />
+        <OpenExpo/>
         <QueryCard />
         <Sponsors />
         <MeliniaTimeline />

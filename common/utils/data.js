@@ -375,7 +375,7 @@ const workshop = {
       ],
     },
   ],
-  durationevent: "1 hour 30 minutes",
+  durationevent: "Prior / On Day registration",
   isResourceprovided: false,
   no_participants: "Individual",
   noprizes: 3,
