@@ -380,7 +380,7 @@ const workshop = {
   no_participants: "Individual",
   noprizes: 3,
   prizeamount: [],
-  eventlink: "https://unstop.com/p/the-entrepreneurial-mindset-coimbatore-institute-of-technology-cit-coimbatore-646877",
+  eventlink: "https://forms.gle/UNDpwosM97CpQ3VKA",
 };
 
 const technicalevents = [

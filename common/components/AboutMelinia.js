@@ -15,7 +15,7 @@ const AboutMelinia = ({ title, description, imageUrl }) => {
     { icon: <InstagramIcon sx={{color:"#833AB4"}}/>, link: "https://www.instagram.com/melinia.cit/" ,message:"Instagram"},
     { icon: <YouTubeIcon sx={{color:"#FF0000",fontSize:"28px"}}/>, link: "https://www.youtube.com/channel/UCcPOe-UsaVlgy5H6ighVDNA",message:"Youtube" },
     { icon: <LinkedInIcon sx={{color:"#0077B5"}} />,link:"https://www.linkedin.com/in/melinia-cit-91810926b/",message:"LinkedIn" },
-    { icon: <PhoneIphoneIcon sx={{color:"#6A6A6A"}}/>, link: "https://drive.google.com/file/d/1WEdwnesvAZWA6cJhRl1MBFV4x9_SJpdr/view?usp=sharing",message:"Download App" },
+    { icon: <PhoneIphoneIcon sx={{color:"#6A6A6A"}}/>, link: "https://bit.ly/melinia2k23",message:"Download App" },
   ];
   return (
     <Container

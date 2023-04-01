@@ -76,11 +76,6 @@ const pages = [
         ],
       },
       {
-        endpoint: "Hackathon",
-        endpointUrl: "/events/hackathon",
-        flagship:true
-      },
-      {
         endpoint: "Workshop",
         endpointUrl: "/events/workshop",
         flagship:false

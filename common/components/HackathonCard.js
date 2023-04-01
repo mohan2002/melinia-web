@@ -69,9 +69,7 @@ const HackathonCard = ({ title, description, imageUrl }) => {
                   Being one of the flagship events of Melinia, Hackathon aims to bring out the brainstorming skills and team’s coordination in the participants. The outcomes expected are viable and feasible product prototypes that will enhance the lifestyles of students, professors and improve the working standard of institutions in general.
                 </Typography>
                       <Box display="flex" flexDirection="row" justifyContent='flex-start' width="100%" sx={{ mt: { xs: 3, md: 6}}} >
-                          <Button sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}} onClick={() => {
-                            router.push("/events/hackathon")
-                          }}>REGISTER HERE<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
+                          <Button sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>Event Completed</Button>
                       </Box>
               </CardContent>
             </Grid>

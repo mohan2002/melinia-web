@@ -112,7 +112,7 @@ const DrawerNav = ({ open, setOpen, pages }) => {
               <Divider />
             </div>
           ))}
-          <ListItem sx={{py:2}} onClick={() => {router.push("https://drive.google.com/file/d/1WEdwnesvAZWA6cJhRl1MBFV4x9_SJpdr/view?usp=sharing")}}>
+          <ListItem sx={{py:2}} onClick={() => {router.push("https://bit.ly/melinia2k23")}}>
             <ListItemText>
               <Box sx={{display:"flex",flexDirection:"row",alignItems:"center"}}>
                 <Typography>Download App</Typography>
