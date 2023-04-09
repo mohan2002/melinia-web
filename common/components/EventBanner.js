@@ -50,9 +50,8 @@ function EventBanner({data,type}) {
                 ":hover": { background: "#ED213A" },
               }}
               variant="contained"
-              href={data.eventlink}
             >
-              Register
+              Event Completed
             </Button>
             </Box>
           </Box>

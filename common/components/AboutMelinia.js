@@ -16,7 +16,7 @@ const AboutMelinia = ({ title, description, imageUrl }) => {
     { icon: <YouTubeIcon sx={{color:"#FF0000",fontSize:"28px"}}/>, link: "https://www.youtube.com/channel/UCcPOe-UsaVlgy5H6ighVDNA",message:"Youtube" },
     { icon: <LinkedInIcon sx={{color:"#0077B5"}} />,link:"https://www.linkedin.com/in/melinia-cit-91810926b/",message:"LinkedIn" },
     { icon: <PhoneIphoneIcon sx={{color:"#6A6A6A"}}/>, link: "https://bit.ly/melinia2k23",message:"Download App" },
-  ];
+  ]
   return (
     <Container
       sx={{

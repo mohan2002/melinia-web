@@ -89,7 +89,7 @@ const WorkshopCard = ({ title, description, imageUrl }) => {
                             </Typography>
                           </Box>
                     <Box display="flex" alignItems="center" >
-                        <Button href="/events/workshop" sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>REGISTER HERE<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
+                        <Button href="/events/workshop" sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>EVENT COMPLETED<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
                     </Box>
                   </Box>
             </CardContent>

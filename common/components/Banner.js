@@ -58,10 +58,12 @@ function Banner() {
       >
         Department of Computing (MSc Software Systems, Data Science, Decision and Computing Sciences, Artificial Intelligence and Machine Learning)
       </Typography>
+
       <Box sx={{height:{xs:"60px",md:"110px"}}}>
       <img src="/images/citlogo.png" alt="logo" style={{height:"100%",marginTop:"10px"}}/>
-
       </Box>
+      <Typography fontWeight="500" color="white" mt={4}>Melinia 2k23's over we'll meet you soon next year</Typography>
+
     </Container>
   );
 }

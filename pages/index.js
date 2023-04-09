@@ -66,9 +66,6 @@ export default function Home() {
           <ParticleComponent />
           <Banner />
         </Box>
-        <Container>
-          <Countdown />
-        </Container>
         <AboutMelinia />
         <EventsGrid />
         <WorkshopCard />

@@ -75,7 +75,7 @@ const OpenExpo = ({ title, description, imageUrl }) => {
                 </Typography>
                   <Box display="flex" flexDirection="row" justifyContent="flex-end"  width="100%" alignItems="flex-end" sx={{ mt: { xs: 3, md: 6}}} >
                     <Box display="flex" alignItems="center" >
-                        <Button href="https://forms.gle/5osGmAfwb21eQAxt6" sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>REGISTER HERE<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
+                        <Button href="" sx={{background:"white",color:"secondary",":hover": { background: "white",color:"lightblue" }}}>EVENT COMPLETED<EastIcon sx={{ color:"secondary",width:"15px", ":hover": { background: "white",color:"lightblue" } }} /></Button>
                     </Box>
                   </Box>
             </CardContent>
